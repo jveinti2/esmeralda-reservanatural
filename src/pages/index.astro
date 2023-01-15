@@ -15,101 +15,80 @@ import Card from "../components/Card.astro";
         Doima, municipio de Piedras – Tolima, ubicados a la rivera del rio Opia.
         HOGAR LEGENDARIO DE LAS OSTRAS DE AGUA DULCE.
         <button
-          class="px-3 py-1 text-lime-500 rounded-lg hover:bg-lime-500 hover:text-white transition-all ease-in duration-75"
+          class="px-3 py-1 text-lime-500 rounded-2xl hover:bg-lime-500 hover:text-white transition-all ease-in duration-75 hover:shadow-md"
         >
           ¡ESTAS INVITADO!
         </button>
       </p>
     </div>
     <div class="container m-auto">
-      <h1 class="font-bold text-5xl leading-tight my-3">
+      <h1 class="font-bold text-5xl leading-tight m-3">
         Nuestra <span class="text-lime-500">reserva</span>
       </h1>
       <div
-        class="pb-20 mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl"
+        class="m-3 pb-20 lg:mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl"
       >
         <div class="text-center">
           <Card
+            icon="../../public/acount.svg"
+            icon_name="nosotros"
             title="Nosotros"
             text="Contamos con un gran equipo de colaboradores y patrocinadores comprometidos con la reserva en la conservación del medio ambiente."
+            link="/nosotros"
+            nameLink="Conoce más"
           />
         </div>
         <div class="text-center">
           <Card
+            icon="../../public/calendar.svg"
+            icon_name="calendar"
             title="Agenda tu visita"
             text="Puedes visitar y vincularte a la reserva, solo debes enviar tu solicitud diligenciando el formulario de contacto."
+            link="/nosotros"
+            nameLink="Conoce más"
           />
         </div>
         <div class="text-center">
           <Card
+            icon="../../public/ecosistema.svg"
+            icon_name="ecosistema"
             title="Nuestros ecosistemas"
             text="Nuestra reserva cuenta con un ecosistema de bosque seco tropical, corredor biológico de la fauna por estar al margen del rio Opia."
+            link="/nosotros"
+            nameLink="Conoce más"
           />
         </div>
         <div class="text-center">
           <Card
+            icon="../../public/apoyanos.svg"
+            icon_name="apoyanos"
             title="Apoyo a la reserva"
             text="Te invitamos a proteger, cuidar y preservar, está en nuestras manos continuar el legado del patrimonio natural. Únete a este propósito diligenciando el formulario de la pestaña."
+            link="/nosotros"
+            nameLink="Conoce más"
           />
         </div>
         <div class="text-center">
           <Card
+            icon="../../public/galeria.svg"
+            icon_name="galeria"
             title="Galeria de fotos"
             text="Encontraras fauna y flora de belleza única natural, conéctate con la historia de un pueblo aguerrido y sorpréndete con sus bellos paisajes."
+            link="/nosotros"
+            nameLink="Conoce más"
           />
         </div>
         <div class="text-center">
           <Card
+            icon="../../public/contactanos.svg"
+            icon_name="contactanos"
             title="Contactanos"
             text="La reserva se encuentra a 20 minutos de la ciudad de Ibagué, puedes visitarnos."
+            link="/nosotros"
+            nameLink="Conoce más"
           />
         </div>
       </div>
     </div>
   </div>
 </Layout>
-
-<!-- <style>
-  main {
-    margin: auto;
-    padding: 1.5rem;
-    max-width: 60ch;
-  }
-  h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 0;
-  }
-  .text-gradient {
-    background-image: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400%;
-    background-position: 0%;
-  }
-  .instructions {
-    line-height: 1.6;
-    margin: 1rem 0;
-    border: 1px solid rgba(var(--accent), 25%);
-    background-color: white;
-    padding: 1rem;
-    border-radius: 0.4rem;
-  }
-  .instructions code {
-    font-size: 0.875em;
-    font-weight: bold;
-    background: rgba(var(--accent), 12%);
-    color: rgb(var(--accent));
-    border-radius: 4px;
-    padding: 0.3em 0.45em;
-  }
-  .instructions strong {
-    color: rgb(var(--accent));
-  }
-  .link-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 1rem;
-    padding: 0;
-  }
-</style> -->
