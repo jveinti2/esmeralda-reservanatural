@@ -1,0 +1,19 @@
+---
+const { nombreVisitante, profesionVisitante, opinion, imagenVisitante } = Astro.props
+---
+
+<div class="flex p-6 bg-white border border-gray-200 rounded-lg shadow-md">
+  <div>
+    <h2 class="text-lg font-extrabold">{nombreVisitante}</h2>
+    <span class="font-bold text-gray-500">{profesionVisitante}</span>
+    <p class="mt-3 mb-4 font-light text-gray-500">{opinion}
+    </p>
+  </div>
+  <div>
+    <img
+      class="w-full"
+      src={imagenVisitante}
+      alt={nombreVisitante}
+    />
+  </div>
+</div>

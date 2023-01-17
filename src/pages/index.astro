@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import CardOpinion from "../components/CardOpinion.astro";
 ---
 
 <Layout title="La Esmeralda Reserva Natural">
@@ -22,9 +23,9 @@ import Card from "../components/Card.astro";
       </p>
     </div>
     <div class="container m-auto">
-      <h1 class="font-bold text-5xl leading-tight m-3">
+      <h2 class="font-bold text-5xl leading-tight m-3">
         Nuestra <span class="text-lime-500">reserva</span>
-      </h1>
+      </h2>
       <div
         class="m-3 pb-20 lg:mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl"
       >
@@ -88,6 +89,25 @@ import Card from "../components/Card.astro";
             nameLink="Conoce más"
           />
         </div>
+      </div>
+    </div>
+    <div class="container m-auto">
+      <h2 class="font-bold text-5xl leading-tight m-3">
+        Nuestos <span class="text-lime-500">visitantes dicen...</span>
+      </h2>
+      <div>
+        <CardOpinion
+          nombreVisitante="Salvador Zinatelli"
+          profesionVisitante="Consultor migratorio / Educativo – Yolochoice"
+          opinion="Vivo en Vancouver Canadá fui a Colombia, conocí parte de sus territorios y fue muy agradable encontrar una reserva natural tan cerca de Ibagué y que realmente tiene una belleza única como son las ostras de agua dulce y un ecosistema privilegiado, Tuve la oportunidad de practicar de un pequeño retiro y clases de Yoga, un lugar excelente para descansar y renovarse. Recomiendo mucho la visita y estadía de La reserva natural Esmeralda."
+          imagenVisitante="https://www.esmeraldareservanatural.com/images/salvador.png"
+        />
+        <CardOpinion
+          nombreVisitante="Sybila Guerra"
+          profesionVisitante="Psicologa / Emprendedora - Seryoga"
+          opinion="Yo ya fui y viste la reserva es un lugar mágico, la experiencia fue maravillosa, lo que más me conecto son sus expírales llenos de energía renovadora, desde mi experiencia profesional también puedo opinar que el sitio es espectacular para la conexión interior, recomiendo mucho visitarlo."
+          imagenVisitante="https://www.esmeraldareservanatural.com/images/Sybila.png"
+        />
       </div>
     </div>
   </div>
