@@ -5,9 +5,9 @@ import CardOpinion from "../components/CardOpinion.astro";
 ---
 
 <Layout title="La Esmeralda Reserva Natural">
-  <div class="bg-[url('../../public/Fondo5.png')] bg-cover bg-bottom bg-fixed">
+  <div class="bg-[url('/public/Fondo5.png')] bg-cover bg-bottom bg-fixed pb-10 p-5">
     <div class="container m-auto h-screen">
-      <h1 class="font-bold text-4xl md:text-6xl leading-tight m-3">
+      <h1 class="font-bold text-4xl md:text-6xl leading-tight mb-3 pt-10">
         Reserva Natural <br />
         <span class="text-lime-500 text-5xl md:text-9xl">La Esmeralda</span>
       </h1>
@@ -16,7 +16,7 @@ import CardOpinion from "../components/CardOpinion.astro";
         Doima, municipio de Piedras – Tolima, ubicados a la rivera del rio Opia.
         HOGAR LEGENDARIO DE LAS OSTRAS DE AGUA DULCE.
         <button
-          class="px-3 py-1 text-lime-500 rounded-2xl hover:bg-lime-500 hover:text-white transition-all ease-in duration-75 hover:shadow-md"
+          class="px-3 py-1 rounded-2xl bg-lime-500 text-white transition-all ease-in- duration-75 hover:shadow-lg"
         >
           ¡ESTAS INVITADO!
         </button>
@@ -31,7 +31,7 @@ import CardOpinion from "../components/CardOpinion.astro";
       >
         <div class="text-center">
           <Card
-            icon="../../public/acount.svg"
+            icon="acount.svg"
             icon_name="nosotros"
             title="Nosotros"
             text="Contamos con un gran equipo de colaboradores y patrocinadores comprometidos con la reserva en la conservación del medio ambiente."
@@ -41,7 +41,7 @@ import CardOpinion from "../components/CardOpinion.astro";
         </div>
         <div class="text-center">
           <Card
-            icon="../../public/calendar.svg"
+            icon="calendar.svg"
             icon_name="calendar"
             title="Agenda tu visita"
             text="Puedes visitar y vincularte a la reserva, solo debes enviar tu solicitud diligenciando el formulario de contacto."
@@ -51,7 +51,7 @@ import CardOpinion from "../components/CardOpinion.astro";
         </div>
         <div class="text-center">
           <Card
-            icon="../../public/ecosistema.svg"
+            icon="ecosistema.svg"
             icon_name="ecosistema"
             title="Nuestros ecosistemas"
             text="Nuestra reserva cuenta con un ecosistema de bosque seco tropical, corredor biológico de la fauna por estar al margen del rio Opia."
@@ -61,7 +61,7 @@ import CardOpinion from "../components/CardOpinion.astro";
         </div>
         <div class="text-center">
           <Card
-            icon="../../public/apoyanos.svg"
+            icon="apoyanos.svg"
             icon_name="apoyanos"
             title="Apoyo a la reserva"
             text="Te invitamos a proteger, cuidar y preservar, está en nuestras manos continuar el legado del patrimonio natural. Únete a este propósito diligenciando el formulario de la pestaña."
@@ -71,7 +71,7 @@ import CardOpinion from "../components/CardOpinion.astro";
         </div>
         <div class="text-center">
           <Card
-            icon="../../public/galeria.svg"
+            icon="galeria.svg"
             icon_name="galeria"
             title="Galeria de fotos"
             text="Encontraras fauna y flora de belleza única natural, conéctate con la historia de un pueblo aguerrido y sorpréndete con sus bellos paisajes."
@@ -81,7 +81,7 @@ import CardOpinion from "../components/CardOpinion.astro";
         </div>
         <div class="text-center">
           <Card
-            icon="../../public/contactanos.svg"
+            icon="contactanos.svg"
             icon_name="contactanos"
             title="Contactanos"
             text="La reserva se encuentra a 20 minutos de la ciudad de Ibagué, puedes visitarnos."
@@ -107,6 +107,18 @@ import CardOpinion from "../components/CardOpinion.astro";
           profesionVisitante="Psicologa / Emprendedora - Seryoga"
           opinion="Yo ya fui y viste la reserva es un lugar mágico, la experiencia fue maravillosa, lo que más me conecto son sus expírales llenos de energía renovadora, desde mi experiencia profesional también puedo opinar que el sitio es espectacular para la conexión interior, recomiendo mucho visitarlo."
           imagenVisitante="https://www.esmeraldareservanatural.com/images/Sybila.png"
+        />
+        <CardOpinion
+          nombreVisitante="Cecilia Leal"
+          profesionVisitante="Ing. Forestal / Fundacion Ambiental Oasis de Vida"
+          opinion="Conocer y recorrer la Reserva Natural, es una gran experiencia, en la que se puede tener contacto directo con la naturaleza, esta a solo 40 minutos de Ibagué, por una vía pavimentada. Este pequeño paraíso enclavado en el bosque seco es orgullo para la región y para sus propietarios, que son ejemplo de compromiso en protección y conservación, de un importante, singular y frágil ecosistema, como lo es el ecosistema seco, prioridad de conservación a nivel mundial."
+          imagenVisitante="https://www.esmeraldareservanatural.com/images/cecilia.png"
+        />
+        <CardOpinion
+          nombreVisitante="Milton Artunduaga"
+          profesionVisitante="Psicologa / Emprendedora - Seryoga"
+          opinion="La tierra tiene música para que la escuchen, los arboles cantan con el viento mientras las aves bailan entre si, las flores sonríen al ser tocadas delicadamente, los caminos guardan las historias de los caminantes que los recorren, las quebradas entonan sus mejores melodías junto con las rocas que las protegen. En la Reserva Natural la Esmeralda puedes escuchar esta sinfonía una y otra vez, al cerrar los ojos o al mirar con detalle la mariposa que baila entre sus coloridos matices."
+          imagenVisitante="https://www.esmeraldareservanatural.com/images/milton.png"
         />
       </div>
     </div>
