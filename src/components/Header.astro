@@ -10,7 +10,7 @@ import ButtonHeader from "../components/ButtonHeader.astro";
       class="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10"
     >
       <div class="flex justify-start lg:w-0 lg:flex-1">
-        <a href="#">
+        <a href="/">
           <span class="sr-only">Your Company</span>
 
           <img
@@ -21,11 +21,6 @@ import ButtonHeader from "../components/ButtonHeader.astro";
         </a>
       </div>
       <div>
-        <!-- <ButtonHeader name="Servicios" />
-        <ButtonHeader name="Galería" />
-        <ButtonHeader name="Noticias" />
-        <ButtonHeader name="Contactanos" />
-        <ButtonHeader name="Apóyanos" /> -->
 
         <section x-data="{ isOpen: false }">
           <div class="flex items-center justify-between">
@@ -63,6 +58,7 @@ import ButtonHeader from "../components/ButtonHeader.astro";
             <div
               class="flex flex-col items-start justify-center w-full space-y-2 md:flex-row md:space-y-0 md:space-x-6"
             >
+              <ButtonHeader name="La reserva" link="reserva" />
               <ButtonHeader name="Servicios" />
               <ButtonHeader name="Galería" />
               <ButtonHeader name="Noticias" />

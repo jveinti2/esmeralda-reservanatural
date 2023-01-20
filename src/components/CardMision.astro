@@ -1,0 +1,20 @@
+---
+const {title, text, icon} = Astro.props
+---
+<div class="m-3">
+  <div class="text-center">
+    <img
+      src={icon}
+      class="w-28 m-auto"
+      alt="icon-objective"
+    />
+    <h5 class="mb-2 text-2xl font-semibold tracking-tight">
+      {title}
+    </h5>
+  </div>
+  <div>
+    <p class="mb-3 font-normal text-gray-500">
+      {text}
+    </p>
+  </div>
+</div>
