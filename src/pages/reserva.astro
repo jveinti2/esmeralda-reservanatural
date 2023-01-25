@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import CardMision from "../components/CardMision.astro";
+import Title2 from "../components/Title2.astro";
+import CardTeam from "../components/CardTeam.astro";
 ---
 
 <Layout title="La Esmeralda Reserva Natural">
@@ -18,17 +20,13 @@ import CardMision from "../components/CardMision.astro";
   </div>
   <div class="container m-auto">
     <div
-      class="space pb-20 lg:mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-5 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl"
+      class="pb-20 lg:mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-5 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl"
     >
-      <div class="text-center">
-        <CardMision
-          title="Objetivo"
-          text="Nuestro objetivo es conservar la diversidad biológica además de permitir y fomentar la utilización sostenible de los recursos silvestres. La Reserva alberga diversos recursos naturales que son una importante fuente de alimento para la fauna silvestre, Asimismo, es una fuente permanente de agua, lo cual permite que las especies no realicen grandes recorridos y se vean expuestas a la caza."
-          icon="public/reserva/target.svg"
-        />
-      </div>
-      <div></div>
-      <div></div>
+      <CardMision
+        title="Objetivo"
+        text="Nuestro objetivo es conservar la diversidad biológica además de permitir y fomentar la utilización sostenible de los recursos silvestres. La Reserva alberga diversos recursos naturales que son una importante fuente de alimento para la fauna silvestre, Asimismo, es una fuente permanente de agua, lo cual permite que las especies no realicen grandes recorridos y se vean expuestas a la caza."
+        icon="public/reserva/target.svg"
+      />
 
       <CardMision
         title="Misión"
@@ -41,6 +39,146 @@ import CardMision from "../components/CardMision.astro";
         text="Convertirse en la alternativa líder ambiental de la región de carácter privado, que interactúa con comunidades locales para que los individuos puedan conectar con procesos de conservación, protección, preservación y uso sostenible de la diversidad biológica, producción sostenible y otros bienes y servicios de carácter ambientales."
         icon="public/reserva/vision.svg"
       />
+    </div>
+    <div>
+      <Title2 text1="Reglamento" text2="interno" />
+      <div>
+        <ul role="list" class="pl-5 space-y-3 text-gray-500">
+          <li>
+            1. No llevar mascotas, radiograbadoras o equipos de sonido, drones,
+            envases de vidrio, plástico, armas, cuchillos, navajas,
+            encendedores, fósforos, cigarrillos y bebidas alcohólicas.
+          </li>
+
+          <li>
+            2. Todos los visitantes de la reserva deben prometer comportamientos
+            de cuidado, preservación, protección y no contaminación del medio
+            ambiente sin excepción alguna.
+          </li>
+
+          <li>
+            3. No marque, no escriba o cause daño a las cortezas de los árboles.
+          </li>
+
+          <li>4. No bote basura.</li>
+
+          <li>5. No fume dentro de la reserva.</li>
+
+          <li>6. Manténgase siempre dentro de los senderos demarcados.</li>
+
+          <li>7. No arranque las plantas.</li>
+
+          <li>
+            8. No grite, no haga ruidos fuertes mientras este en la zona
+            corredor Biológico.
+          </li>
+
+          <li>
+            9 No Sustraer muestras biológicas de una reserva natural, puede
+            ocasionar daños a ellas.
+          </li>
+
+          <li>10 No alimentar a los animales.</li>
+
+          <p>
+            Incumplir este reglamento da como consecuencia la expulsión
+            inmediata del visitante y en algunos casos le puede ocasionar
+            sanciones legales. Ayúdanos a cuidar la naturaleza. “No te lleves
+            nada, no dejes nada”
+          </p>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <Title2 text1="Nuestro" text2="equipo" />
+      <div>
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+          <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+            <CardTeam
+              src="https://www.esmeraldareservanatural.com/images/Rafael.jpg"
+              name="Rafael Mauricio Bahamon"
+              rol="Nuestro propietario"
+              descripcion="Respeto y amor por la naturaleza"
+            />
+            <CardTeam
+              src="https://www.esmeraldareservanatural.com/images/Esmeralda.jpg"
+              name="Esmeralda Becerra Vega"
+              rol="Gerente de la Reserva"
+              descripcion="Dejar una huella verde en cada corazón que nos visita"
+            />
+            <CardTeam
+              src="https://www.esmeraldareservanatural.com/images/Natalia.jpg"
+              name="Natalia Bahamon Becerra"
+              rol="La fuente de inspiración de la Reserva"
+              descripcion="Espíritu libre por el mundo"
+              
+            />
+            <CardTeam
+            src="https://www.esmeraldareservanatural.com/images/Luis.jpg"
+            name="Luis Tafur"
+            rol="Colaborador de la Reserva"
+            descripcion="La experiencia y sabiduría al servicio de la madre tierra"
+             />
+            <CardTeam
+            src="https://www.esmeraldareservanatural.com/images/Monica.jpeg"
+            name="Veronica Forero"
+            rol="Coordinadora de Mantenimiento"
+            descripcion="¡Querer es poder!"
+             />
+            <CardTeam
+            src="https://www.esmeraldareservanatural.com/images/Alejandro%20Perez.jpeg"
+            name="Rafael Mauricio Bahamon"
+            rol="Nuestro Jardinero"
+            descripcion="¡Juventud que cree en el campo!"
+             />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <Title2 text1="Marco" text2="jurídico" />
+      <div>
+        <p class="mt-3 mb-4 font-light text-gray-500">
+          Convenio de Diversidad Biológica: Es un acuerdo internacional del cual
+          Colombia hace parte, en el que los países firmantes o miembros, se
+          comprometen a conservar la diversidad biológica mediante áreas
+          protegidas y apoyando todas las iniciativas que aporten al
+          cumplimiento de estos objetivos e indagando formas organizativas que
+          hagan más efectiva ecológica y socialmente la conservación,
+          coordinando y consolidando un sistema nacional de áreas protegidas. En
+          Colombia este convenio se aprueba mediante la Ley 165 de 1994.
+          Constitución Política de 1991, señala un conjunto de deberes
+          ambientales a cargo del Estado, entre los que sobresalen el artículo
+          79, estableciendo el deber del Estado de proteger la diversidad e
+          integridad del ambiente, conservar las áreas de especial importancia
+          ecológica y fomentar la educación para lograr estos fines.<br />
+          La Constitución consagró deberes compartidos entre el Estado y los particulares
+          como la obligación de proteger las riquezas culturales y naturales de la
+          nación prevista en el artículo 8, así como obligaciones a cargo de las
+          personas de manera “, exclusiva como la de proteger los recursos naturales
+          del país y velar por la conservación del ambiente sano.<br />
+          Ley 99 de 1993: Conocida como la ley ambiental, en su artículo 109 define
+          una Reserva Natural de la Sociedad Civil y en el artículo 110 designa un
+          registro ante el Ministerio de Ambiente.<br />
+          Decreto 1996 de 1999: Reglamenta el artículo 110 y 111 de la Ley 99 de
+          1993, definiendo las RNSC y su objetivo, regula sus usos, actividades,
+          zonificación y el registro de matrícula ante la Unidad Administrativa de
+          Parques Nacionales Naturales (UAPNN). Define un mecanismo de registro de
+          RNSC ante el Ministerio del Medio Ambiente.<br />
+          Ley 216 de 2003: Delega a la Unidad de Parques Nacionales, dentro de la
+          estructura del Ministerio de Ambiente, Vivienda y Desarrollo Territorial
+          el registro de las RNSC.<br />
+          Resolución 0207 de 29 de agosto de 2007. Se crea el registro de las organizaciones
+          articuladoras de las Reservas Naturales de la Sociedad Civil y otros esfuerzos
+          de conservación privada en reconocimiento a su aporte a la estrategia nacional
+          de conservación in situ de diversidad biológica.<br />
+          Decreto 2372 de 2010 Se reglamenta el Sistema Nacional de Áreas Protegidas
+          (SINAP), las categorías de manejo que lo conforman y se dictan otras disposiciones.
+          Incluye a las RNSC en el SINAP.<br />
+          Identificación de Nuestra Reserva “LA ESMERALDA” RNSC 150-20, Diciembre
+          07 de 2020, TRÁMITE DE REGISTRO DE LA RESERVA NATURAL
+        </p>
+      </div>
     </div>
   </div>
 </Layout>

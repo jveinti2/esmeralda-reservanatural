@@ -2,16 +2,17 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import CardOpinion from "../components/CardOpinion.astro";
+import Title1 from "../components/Title1.astro";
+import Title2 from "../components/Title2.astro";
 ---
 
 <Layout title="La Esmeralda Reserva Natural">
-  <div class="bg-[url('/public/Fondo5.png')] bg-cover bg-bottom bg-fixed pb-10 p-5">
+  <div
+    class="bg-[url('/public/Fondo5.png')] bg-cover bg-bottom bg-fixed pb-10 p-5"
+  >
     <div class="container m-auto h-screen">
-      <h1 class="font-bold text-4xl md:text-6xl leading-tight mb-3 pt-10">
-        Reserva Natural <br />
-        <span class="text-lime-500 text-5xl md:text-9xl">La Esmeralda</span>
-      </h1>
-      <p class="text-lg font-bold tracking-widest text-gray-700 ">
+      <Title1 text1="Reserva Natural" text2="La Esmeralda" />
+      <p class="text-lg font-bold tracking-widest text-gray-700">
         Somos un oasis de naturaleza para la fauna🐍 y la flora🌺. Estamos en
         Doima, municipio de Piedras – Tolima, ubicados a la rivera del rio Opia.
         HOGAR LEGENDARIO DE LAS OSTRAS DE AGUA DULCE.
@@ -23,9 +24,8 @@ import CardOpinion from "../components/CardOpinion.astro";
       </p>
     </div>
     <div class="container m-auto">
-      <h2 class="font-bold text-5xl leading-tight m-3">
-        Nuestra <span class="text-lime-500">reserva</span>
-      </h2>
+      <Title2 text1="Nuestra" text2="Reserva" />
+      
       <div
         class="m-3 pb-20 lg:mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl"
       >
