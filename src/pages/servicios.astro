@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Title11 from "../components/Title11.astro";
+import CardServiciosL from "../components/CardServiciosL.astro";
+import CardServiciosR from "../components/CardServiciosR.astro";
+import Title2 from "../components/Title2.astro";
+
+---
+
+<Layout title="La Esmeralda Reserva Natural | Servicios">
+  <div
+    class="bg-[url('public/servicios/fondo.avif')] bg-cover bg-center bg-no-repeat"
+  >
+    <div class="container m-auto">
+      <Title11 text1="Nuestros" text2="Servicios" />
+    </div>
+  </div>
+  <div class="container m-auto space-y-11">
+    <div class="p-5 rounded-lg transition-all ease-in hover:shadow-lg">
+      <Title2
+        text1="Avistamiento, observación "
+        text2="e investigación del ecosistema"
+      />
+      <CardServiciosL
+        img="public/servicios/avistamiento.avif"
+        text1="La reserva está ubicada en el corazón del Tolima, el corregimiento de Doima esta surcado por la cordillera central con hermosos paisajes de valles y montañas, bordeado por los ríos Opia y Doima, considerados de gran importancia por ser el hogar de las ostras de agua dulce (Acostea Rivoli). Especie endémica de Colombia. Nuestros ultimos reportes tienen registros del avistamiento de más de 50 especies de fauna, dentro de las aves avistadas tenemos: gorriones, tangaras, atrapa moscas, carpinteros, mirlas, torolitas y palomas. La especie símbolo de nuestra reserva es; Barranquero ferina (momotus subrufescens)."
+      />
+    </div>
+    <div class="p-5 rounded-lg transition-all ease-in hover:shadow-lg">
+      <Title2 text1="Coaching natural - " text2="recarga de energia" />
+      <CardServiciosR
+        img="public/servicios/couching.avif"
+        text="En la reserva estamos comprometidos con ayudar y ser una verdadera fuente de recarga energética, nuestra terapia de bienestar es personalizada y requiere total voluntad de conectar con la madre tierra a través de la interacción con los 4 elementos.La Madre Tierra será tu guía para ayudarte a comprender las diferentes esferas que componen tu cuerpo energético, desbloqueándolo, equilibrándolo y habilitándolo para que todos los circuitos de energía funcionen debidamente y en armonía, recuperando progresivamente la salud y el bienestar a todos los niveles."
+      />
+    </div>
+    <div class="p-5 rounded-lg transition-all ease-in hover:shadow-lg">
+      <Title2 text1="Canasta del " text2="campo" />
+      <CardServiciosL
+        img="public/servicios/avistamiento.avif"
+        text1="Sabías que los alimentos de origen natural además de contribuir a tu salud, aportan también al cuidado del medio ambiente. En tiempos donde los productos procesados han invadido la canasta familiar, tú podrías hacer la diferencia, consume alimentos sin pesticidas ni insecticidas."
+        text2="La reserva te ofrece la oportunidad de probar frutas y verduras de cosecha con origen bio- natural."
+        text3="La información de productos ofertados se publica via WhatsApp."
+        text4="Servicio disponible únicamente para la ciudad de ibague. Pedido mínimo $20.000 COP."
+        cta="¡Ver los productos! "
+      />
+    </div>
+  </div>
+</Layout>

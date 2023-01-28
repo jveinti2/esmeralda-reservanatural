@@ -3,19 +3,15 @@ import Layout from "../layouts/Layout.astro";
 import CardMision from "../components/CardMision.astro";
 import Title2 from "../components/Title2.astro";
 import CardTeam from "../components/CardTeam.astro";
+import Title11 from "../components/Title11.astro"
 ---
 
-<Layout title="La Esmeralda Reserva Natural">
+<Layout title="La Esmeralda Reserva Natural | Reserva">
   <div
     class="bg-[url('public/imgs/reserva.avif')] bg-cover bg-center bg-no-repeat"
   >
     <div class="container m-auto">
-      <h1
-        class="font-bold text-4xl md:text-6xl leading-tight mb-3 pt-10 text-white"
-      >
-        Nuestra Reserva<br />
-        <span class="text-lime-500 text-5xl md:text-9xl">La Esmeralda</span>
-      </h1>
+      <Title11 text1="Nuestra" text2="La Esmeralda" />
     </div>
   </div>
   <div class="container m-auto">
@@ -111,26 +107,25 @@ import CardTeam from "../components/CardTeam.astro";
               name="Natalia Bahamon Becerra"
               rol="La fuente de inspiración de la Reserva"
               descripcion="Espíritu libre por el mundo"
-              
             />
             <CardTeam
-            src="public/reserva/Luis.jpg"
-            name="Luis Tafur"
-            rol="Colaborador de la Reserva"
-            descripcion="La experiencia y sabiduría al servicio de la madre tierra"
-             />
+              src="public/reserva/Luis.jpg"
+              name="Luis Tafur"
+              rol="Colaborador de la Reserva"
+              descripcion="La experiencia y sabiduría al servicio de la madre tierra"
+            />
             <CardTeam
-            src="public/reserva/Monica.jpg"
-            name="Veronica Forero"
-            rol="Coordinadora de Mantenimiento"
-            descripcion="¡Querer es poder!"
-             />
+              src="public/reserva/Monica.jpg"
+              name="Veronica Forero"
+              rol="Coordinadora de Mantenimiento"
+              descripcion="¡Querer es poder!"
+            />
             <CardTeam
-            src="public/reserva/alejandro.jpg"
-            name="Alejandro Perez"
-            rol="Nuestro Jardinero"
-            descripcion="¡Juventud que cree en el campo!"
-             />
+              src="public/reserva/alejandro.jpg"
+              name="Alejandro Perez"
+              rol="Nuestro Jardinero"
+              descripcion="¡Juventud que cree en el campo!"
+            />
           </div>
         </div>
       </div>

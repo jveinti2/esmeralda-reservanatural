@@ -1,0 +1,33 @@
+---
+import BtnWapp from "../components/BtnWapp.astro";
+import BtnForm from "../components/BtnForm.astro";
+
+const { img, text1, text2, text3, text4, cta } = Astro.props;
+---
+
+<div>
+  <div class="lg:flex space-x-4">
+    <div class="rounded-lg lg:rounded-l-lg mb-2">
+      <img
+        class="rounded-lg lg:rounded-l-lg"
+        src={img}
+        alt="imagen de servicio"
+      />
+    </div>
+    <div class="rounded-lg lg:rounded-r-lg">
+      <p class="mb-3 font-normal text-gray-500">{text1}</p>
+      <p class="mb-3 font-normal text-gray-500">{text2}</p>
+      <p class="mb-3 font-normal text-gray-500">{text3}</p>
+      <p class="mb-3 font-normal text-gray-500">{text4}</p>
+    </div>
+  </div>
+  <div class="text-center">
+    {
+      cta == "¡Ver los productos! " ? (
+        <BtnWapp cta={cta} />
+      ) : (
+        <BtnForm cta={cta} />
+      )
+    }
+  </div>
+</div>
