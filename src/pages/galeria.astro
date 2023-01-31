@@ -1,0 +1,31 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Title11 from "../components/Title11.astro";
+import Title2 from "../components/Title2.astro";
+import Carusel from "../components/Carusel.astro";
+---
+
+<Layout title="La Esmeralda Reserva Natural | Galaeria">
+  <div
+    class="bg-[url('public/galeria/fondo.avif')] bg-cover bg-center bg-no-repeat"
+  >
+    <div class="container m-auto">
+      <Title11 text1="Galeria de" text2="Fotos" />
+    </div>
+  </div>
+  <div class="container m-auto">
+    <Title2 text1="Conoce la Reserva Natural   " text2="La Esmeralda" />
+    <div>
+      <iframe
+        class="m-auto w-72 h-40 md:w-2/3 md:h-72 lg:w-3/3 lg:h-96"
+        src="https://www.youtube.com/embed/tFlwLgyEN9M"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+    <div>
+      <Title2 text1="Fauna" text2="y Flora" />
+        <Carusel />
+    </div>
+  </div>
+</Layout>
