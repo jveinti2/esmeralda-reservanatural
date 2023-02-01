@@ -2,7 +2,10 @@
 import Layout from "../layouts/Layout.astro";
 import Title11 from "../components/Title11.astro";
 import Title2 from "../components/Title2.astro";
-import Carusel from "../components/Carusel.astro";
+import CaruselL from "../components/CaruselL.astro";
+import CaruselR from "../components/CaruselR.astro";
+import CaruselH from "../components/CaruselH.astro";
+import CaruselC from "../components/CaruselC.astro";
 ---
 
 <Layout title="La Esmeralda Reserva Natural | Galaeria">
@@ -25,7 +28,22 @@ import Carusel from "../components/Carusel.astro";
     </div>
     <div>
       <Title2 text1="Fauna" text2="y Flora" />
-        <Carusel />
+      <div class="md:flex gap-4 space-y-3 md:space-y-0">
+        <CaruselL />
+        <CaruselR />
+      </div>
+    </div>
+    <div>
+      <Title2 text1="Hallazgos" text2="históricos" />
+      <div class="md:flex gap-4 space-y-3 md:space-y-0">
+        <CaruselH />
+      </div>
+    </div>
+    <div>
+      <Title2 text1="Productos del" text2="campo" />
+      <div class="md:flex gap-4 space-y-3 md:space-y-0">
+        <CaruselC />
+      </div>
     </div>
   </div>
 </Layout>
