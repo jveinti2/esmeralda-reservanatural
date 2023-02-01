@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Title11 from "../components/Title11.astro";
+import BtnWapp from "../components/BtnWapp.astro";
+---
+
+<Layout title="La Esmeralda Reserva Natural | Contactanos">
+  <div
+    class="bg-[url('public/contactanos/contactanos.avif')] bg-cover bg-center bg-no-repeat"
+  >
+    <div class="container m-auto">
+      <Title11 text1="¿Quieres cominicarte" text2="con nostros?" />
+    </div>
+  </div>
+  <div class="container m-auto">
+    <div class="text-center">
+      <p class="mt-3 mb-4 font-bold text-gray-500">
+        Si quieres comunicación directa, contactános por medio de WhatsApp
+      </p>
+      <BtnWapp cta="¡Haz click aquí y hablemos!" />
+    </div>
+    <div class="text-center">
+      <p class="mt-3 mb-4 font-bold text-gray-500">
+        ó puedes llenar el siguiente formulario y nosotros nos pondremos en
+        contacto contigo.
+      </p>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5bcdza4OrEblDKrC0R0xRKngIS5Ff0hZyaxcFFaCUj8aRNg/viewform?embedded=true" frameborder="0" class="w-full h-screen mb-5"></iframe>
+    </div>
+  </div>
+</Layout>
