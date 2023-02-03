@@ -1,0 +1,89 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Title11 from "../components/Title11.astro";
+import Title2 from "../components/Title2.astro";
+import Testimonial from "../components/Testimonial.astro";
+import CardServiciosL from "../components/CardServiciosL.astro";
+---
+
+<Layout title="La Esmeralda Reserva Natural | Contactanos">
+  <div
+    class="bg-[url('apoyanos/fondo.avif')] bg-cover bg-center bg-no-repeat p-5 md:p-10 lg:p-20"
+  >
+    <div class="container m-auto">
+      <Title11 text1="¿Te gustaria" text2="apoyarnos?" />
+    </div>
+  </div>
+  <div class="container m-auto">
+    <div>
+      <Title2 text1="Alianzas y" text2="colaboraciones" />
+      <div>
+        <a
+          href="#"
+          class="m-auto flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+        >
+          <img
+            class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+            src="https://www.esmeraldareservanatural.com/images/fundacion.jpg"
+            alt=""
+          />
+          <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5
+              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+              Fundación ambiental Oasis de vida
+            </h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Gracias por apoyarnos con la creación del proyecto para
+              convertirnos en reserva natural.
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div>
+      <Title2 text1="Colaboradores" />
+      <div class="md:flex">
+        <Testimonial
+          frase="!Tenemos estanque!"
+          foto="https://www.esmeraldareservanatural.com/images/Alfredo.jpg"
+          nombre="Alfredo Várgas"
+          agradecimiento="Gracias ingeniero por su valioso aporte, con su ayuda hoy tenemos un estanque bionatural."
+        />
+        <Testimonial
+          frase="Mula parada no gana flete"
+          foto="https://www.esmeraldareservanatural.com/images/Mauricio.jpg"
+          nombre="Mauricio Oviedo"
+          agradecimiento="Gracias por su aporte para embellecer la reserva."
+        />
+      </div>
+      <div class="md:flex">
+        <Testimonial
+          frase="¡Vamos a pintar!"
+          foto="https://www.esmeraldareservanatural.com/images/Sandra.jpg"
+          nombre="Sandra Avendaño"
+          agradecimiento="Toda una artista, gracias a su aporte e inspiración hizo realidad el camino de las mariposas."
+        />
+        <Testimonial
+          frase="¡Lo hacemos hoy mismo!"
+          foto="https://www.esmeraldareservanatural.com/images/Edwin.jpg"
+          nombre="Mauricio Oviedo"
+          agradecimiento="Gracias por su aporte para embellecer la reserva."
+        />
+      </div>
+    </div>
+    <div>
+      <Title2 
+        text2="Voluntariado"
+      />
+      <CardServiciosL
+      img="/apoyanos/voluntariado.avif"
+      text1="El objetivo del programa de voluntariado es la realización de acciones de conservación y preservación del medio ambiente, esta dirigido a mayores de edad dispuestos a donar tiempo de trabajo a la madre tierra interactuando con labores diarias, propias de la reserva. El voluntariado tiene dos categorías:"
+      text2="1. Aprendices: Personas que no han realizado actividades ambientales ni agropecuarias."
+      text3="2. Expertos: personas que acreditan experiencia en algún área ambiental o agropecuaria."
+      text4="Para las dos modalidades se requiere diligenciar el formulario. Aplican condiciones y restricciones."
+      cta="!Quiero ser voluntario!"
+      />
+    </div>
+  </div>
+</Layout>
