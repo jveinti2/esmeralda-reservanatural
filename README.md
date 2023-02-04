@@ -1,7 +1,7 @@
 # Proyecto Reserva Natural La Esmeralda
-<center>
+<div style="widht:100%; margin: 0 auto">
   <img src="https://github.com/jveinti2/esmeralda-reservanatural/blob/master/public/Imagen1.png" >
-  </center>
+ </div>
 ![Imagen del mockup](https://github.com/jveinti2/esmeralda-reservanatural/blob/master/public/Imagen1.png)
 
 
