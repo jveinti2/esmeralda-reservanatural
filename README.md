@@ -1,50 +1,19 @@
-# Welcome to [Astro](https://astro.build)
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
+# Proyecto Reserva Natural La Esmeralda
 ![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+Este proyecto consiste en una reconstrucción de la página original de la Reserva Natural La Esmeralda utilizando el framework Astro y el framework de estilos CSS Tailwind. La página está alojada en [laesmeraldareserva.com](https://euphonious-tulumba-6228b5.netlify.app/)  y ofrece información sobre la reserva, sus atractivos naturales y servicios.
 
+## Características
+- Interfaz de usuario diseñada con Tailwind CSS
+- Desarrollo con el framework Astro
+- Visualización optimizada tanto para escritorio como para dispositivos móviles
+## Requisitos
+- Navegador web actualizado
+## Contribuciones
+Si deseas contribuir al proyecto, por favor sigue las siguientes instrucciones:
 
-## 🚀 Project Structure
+1. Haz un fork del repositorio
+2. Crea una rama para tu contribución
+3. Haz tus cambios y realiza un pull request
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `npm run astro --help` | Get help using the Astro CLI                       |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Licencia
+Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más información.
