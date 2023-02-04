@@ -10,38 +10,38 @@ import CaruselC from "../components/CaruselC.astro";
 
 <Layout title="La Esmeralda Reserva Natural | Galaeria">
   <div
-    class="bg-[url('/galeria/fondo.avif')] bg-cover bg-center bg-no-repeat"
+    class="mb-7 bg-[url('/galeria/fondo.avif')] bg-cover bg-center bg-no-repeat"
   >
     <div class="container m-auto">
-      <Title11 text1="Galeria de" text2="Fotos" />
+      <Title11 text1="Galería de" text2="Fotos" />
     </div>
   </div>
   <div class="px-4 container m-auto">
-    <Title2 text1="Conoce la Reserva Natural   " text2="La Esmeralda" />
-    <div>
+    <Title2 text1="Conoce la reserva natural   " text2="La Esmeralda" />
+    <div class="my-7">
       <iframe
-        class="m-auto w-72 h-40 md:w-2/3 md:h-72 lg:w-3/3 lg:h-96"
+        class="my-4 m-auto w-72 h-40 md:w-2/3 md:h-72 lg:w-3/3 lg:h-96"
         src="https://www.youtube.com/embed/tFlwLgyEN9M"
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
     </div>
-    <div>
+    <div class="my-20">
       <Title2 text1="Fauna" text2="y Flora" />
-      <div class="md:flex gap-4 space-y-3 md:space-y-0">
+      <div class="my-6 md:flex gap-4 space-y-3 md:space-y-0">
         <CaruselL />
         <CaruselR />
       </div>
     </div>
-    <div>
+    <div class="my-20">
       <Title2 text1="Hallazgos" text2="históricos" />
-      <div class="md:flex gap-4 space-y-3 md:space-y-0">
+      <div class=" my-6 md:flex gap-4 space-y-3 md:space-y-0">
         <CaruselH />
       </div>
     </div>
-    <div>
+    <div class="my-20">
       <Title2 text1="Productos del" text2="campo" />
-      <div class="md:flex gap-4 space-y-3 md:space-y-0">
+      <div class="my-6 md:flex gap-4 space-y-3 md:space-y-0">
         <CaruselC />
       </div>
     </div>
