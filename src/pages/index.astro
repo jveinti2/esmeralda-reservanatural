@@ -3,21 +3,23 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import CardOpinion from "../components/CardOpinion.astro";
 import Title1 from "../components/Title1.astro";
-import Title2 from "../components/Title2.astro";
 import CardCentro from "../components/CardCentro.astro";
 import Visitas from "../components/Visitas.astro";
+import Title2Inicio from "../components/Title2Inicio.astro";
 ---
+
 
 <Layout title="La Esmeralda Reserva Natural">
   <div
-    class="bg-[url('/fondos/fondo3.avif')] bg-cover bg-center bg-fixed pb-10 p-5"
+    class="bg-[url('/fondos/fondo5.avif')] bg-cover bg-center bg-fixed pb-10 p-5"
   >
     <div class="container m-auto h-screen">
       <Title1 text1="Reserva Natural" text2="La Esmeralda" />
-      <p class="text-2xl font-extrabold drop-shadow-xl shadow-white">
-        HOGAR LEGENDARIO DE LAS OSTRAS DE AGUA DULCE. Somos un oasis de naturaleza para la fauna🐍 y la flora🌺. 
-        Estamos en Doima, municipio de Piedras – Tolima, ubicados a la rivera del río Opia.
-        
+      <p class="text-2xl font-extrabold drop-shadow-xl shadow-black text-white">
+        HOGAR LEGENDARIO DE LAS OSTRAS DE AGUA DULCE. Somos un oasis de
+        naturaleza para la fauna🐍 y la flora🌺. Estamos en Doima, municipio de
+        Piedras – Tolima, ubicados a la rivera del río Opia.
+
         <button
           class="px-5 py-1 rounded-2xl bg-lime-500 text-white transition-all ease-in- duration-75 hover:shadow-lg"
         >
@@ -25,8 +27,8 @@ import Visitas from "../components/Visitas.astro";
         </button>
       </p>
     </div>
-    <div class="container m-auto">
-      <Title2 text1="Nuestra" text2="Reserva" />
+    <div class="container m-auto pb-28">
+      <Title2Inicio text1="Nuestra" text2="Reserva" />
 
       <div>
         <div class="text-center">
@@ -43,7 +45,7 @@ import Visitas from "../components/Visitas.astro";
       </div>
 
       <div
-        class="m-3 pb-20 lg:mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl"
+        class="m-3 lg:mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl"
       >
         <div class="text-center">
           <Card
@@ -75,7 +77,9 @@ import Visitas from "../components/Visitas.astro";
             nameLink="Conoce más"
           />
         </div>
-        <div class="text-center">
+      </div>
+      <div class="grid grid-cols-2 place-items-center">
+        <div class="text-center h-full">
           <Card
             icon="galeria.svg"
             icon_name="galeria"
@@ -85,7 +89,7 @@ import Visitas from "../components/Visitas.astro";
             nameLink="Conoce más"
           />
         </div>
-        <div class="text-center">
+        <div class="text-center h-full">
           <Card
             icon="contactanos.svg"
             icon_name="contactanos"
@@ -97,10 +101,8 @@ import Visitas from "../components/Visitas.astro";
         </div>
       </div>
     </div>
-    <div class="container m-auto">
-      <h2 class="font-bold text-5xl leading-tight m-3">
-        Nuestos <span class="text-lime-500">visitantes dicen...</span>
-      </h2>
+    <div class="container m-auto pb-28">
+      <Title2Inicio text1="Nuestros visitantes" text2="dicen..." />
       <div>
         <CardOpinion
           nombreVisitante="Salvador Zinatelli"
@@ -130,6 +132,7 @@ import Visitas from "../components/Visitas.astro";
     </div>
     <div class="container m-auto">
       <Visitas />
+      
     </div>
   </div>
 </Layout>
