@@ -4,18 +4,20 @@ import Card from "../components/Card.astro";
 import CardOpinion from "../components/CardOpinion.astro";
 import Title1 from "../components/Title1.astro";
 import Title2 from "../components/Title2.astro";
+import CardCentro from "../components/CardCentro.astro";
+import Visitas from "../components/Visitas.astro";
 ---
 
 <Layout title="La Esmeralda Reserva Natural">
   <div
-    class="bg-[url('/Fondo5.png')] bg-cover bg-bottom bg-fixed pb-10 p-5"
+    class="bg-[url('/fondos/fondo3.avif')] bg-cover bg-center bg-fixed pb-10 p-5"
   >
     <div class="container m-auto h-screen">
       <Title1 text1="Reserva Natural" text2="La Esmeralda" />
-      <p class="text-lg font-bold tracking-widest text-gray-700">
-        Somos un oasis de naturaleza para la fauna🐍 y la flora🌺. Estamos en
-        Doima, municipio de Piedras – Tolima, ubicados a la rivera del río Opia.
-        HOGAR LEGENDARIO DE LAS OSTRAS DE AGUA DULCE.
+      <p class="text-2xl font-extrabold drop-shadow-xl shadow-white">
+        HOGAR LEGENDARIO DE LAS OSTRAS DE AGUA DULCE. Somos un oasis de naturaleza para la fauna🐍 y la flora🌺. 
+        Estamos en Doima, municipio de Piedras – Tolima, ubicados a la rivera del río Opia.
+        
         <button
           class="px-5 py-1 rounded-2xl bg-lime-500 text-white transition-all ease-in- duration-75 hover:shadow-lg"
         >
@@ -25,20 +27,24 @@ import Title2 from "../components/Title2.astro";
     </div>
     <div class="container m-auto">
       <Title2 text1="Nuestra" text2="Reserva" />
-      
-      <div
-        class="m-3 pb-20 lg:mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl"
-      >
+
+      <div>
         <div class="text-center">
-          <Card
+          <CardCentro
             icon="acount.svg"
             icon_name="nosotros"
             title="Nosotros"
-            text="Contamos con un gran equipo de colaboradores y patrocinadores comprometidos con la reserva en la conservación del medio ambiente."
+            text="Hace algún tiempo, dos personas apasionadas por la naturaleza iniciaron su sueño de ser guardianes de una porción de terreno en Doima, Piedras en Tolima, que gradualmente convirtieron en un oasis para la fauna y la flora silvestre que transita por el corredor biológico del Río Opia."
+            text2="Hoy, después de 7 años, somos la Reserva Natural de la Sociedad Civil (RNSC) 151-20 La Esmeralda, según la resolución No. 227 del 2 de diciembre de 2022, emitida por el Ministerio del Medio Ambiente a través de Parques Nacionales. Seguimos creyendo que todos podemos pasar de la intención a los hechos."
             link="/nosotros"
             nameLink="Conoce más"
           />
         </div>
+      </div>
+
+      <div
+        class="m-3 pb-20 lg:mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl"
+      >
         <div class="text-center">
           <Card
             icon="calendar.svg"
@@ -121,6 +127,9 @@ import Title2 from "../components/Title2.astro";
           imagenVisitante="https://www.esmeraldareservanatural.com/images/milton.png"
         />
       </div>
+    </div>
+    <div class="container m-auto">
+      <Visitas />
     </div>
   </div>
 </Layout>
