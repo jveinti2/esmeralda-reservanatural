@@ -20,14 +20,14 @@ import Title2Inicio from "../components/Title2Inicio.astro";
         naturaleza para la fauna🐍 y la flora🌺. Estamos en Doima, municipio de
         Piedras – Tolima, ubicados a la rivera del río Opia.
 
-        <button
+        <a href="#nosotros"
           class="px-5 py-1 rounded-2xl bg-lime-500 text-white transition-all ease-in- duration-75 hover:shadow-lg"
         >
           ¡ESTÁS INVITADO!
-        </button>
+        </a>
       </p>
     </div>
-    <div class="container m-auto pb-28">
+    <div id="nosotros" class="container m-auto pb-28">
       <Title2Inicio text1="Nuestra" text2="Reserva" />
 
       <div>
@@ -38,7 +38,7 @@ import Title2Inicio from "../components/Title2Inicio.astro";
             title="Nosotros"
             text="Hace algún tiempo, dos personas apasionadas por la naturaleza iniciaron su sueño de ser guardianes de una porción de terreno en Doima, Piedras en Tolima, que gradualmente convirtieron en un oasis para la fauna y la flora silvestre que transita por el corredor biológico del Río Opia."
             text2="Hoy, después de 7 años, somos la Reserva Natural de la Sociedad Civil (RNSC) 151-20 La Esmeralda, según la resolución No. 227 del 2 de diciembre de 2022, emitida por el Ministerio del Medio Ambiente a través de Parques Nacionales. Seguimos creyendo que todos podemos pasar de la intención a los hechos."
-            link="/nosotros"
+            link="https://www.esmeraldareservanatural.com/recorrido"
             nameLink="Conoce más"
           />
         </div>
@@ -49,12 +49,12 @@ import Title2Inicio from "../components/Title2Inicio.astro";
       >
         <div class="text-center">
           <Card
-            icon="calendar.svg"
-            icon_name="calendar"
-            title="Agenda tu visita"
-            text="Puedes visitar y vincularte a la reserva, solo debes enviar tu solicitud diligenciando el formulario de contacto."
-            link="/nosotros"
-            nameLink="Conoce más"
+            icon="hatExplorer.svg"
+            icon_name="aliado"
+            title="Vincúlate a la reserva"
+            text="Únete a la misión de proteger la biodiversidad desde cualquier parte del mundo! Envía tu solicitud y forma parte de nuestra comunidad de personas comprometidas con la conservación. Estamos emocionados de contar contigo como un aliado valioso en esta importante causa."
+            link="/contactanos"
+            nameLink="Vincúlate !"
           />
         </div>
         <div class="text-center">
@@ -62,31 +62,31 @@ import Title2Inicio from "../components/Title2Inicio.astro";
             icon="ecosistema.svg"
             icon_name="ecosistema"
             title="Nuestros ecosistemas"
-            text="Nuestra reserva cuenta con un ecosistema de bosque seco tropical, corredor biológico de la fauna por estar al margen del ro Opia."
-            link="/nosotros"
+            text="Nuestra reserva alberga un vibrante ecosistema de bosque seco tropical y es un corredor biológico vital para la diversidad de fauna. Además, su ubicación al margen del río Opia brinda una gran cantidad de oportunidades para explorar la belleza natural de la región y aprender sobre su importancia ecológica."
+            link="/reserva"
             nameLink="Conoce más"
           />
         </div>
         <div class="text-center">
           <Card
-            icon="apoyanos.svg"
-            icon_name="apoyanos"
+            icon="volunteer.svg"
+            icon_name="voluntariado"
             title="Apoyo a la reserva"
-            text="Te invitamos a proteger, cuidar y preservar, está en nuestras manos continuar el legado del patrimonio natural. Únete a este propósito diligenciando el formulario de la pestaña."
-            link="/nosotros"
-            nameLink="Conoce más"
+            text="Únete a la aventura de ser parte de la conservación de nuestro planeta y forma parte de la comunidad de voluntarios en la reserva. Tu colaboración es fundamental para preservar la biodiversidad y garantizar un futuro sostenible para las próximas generaciones."
+            link="/contactanos"
+            nameLink="Hazte voluntario !"
           />
         </div>
       </div>
-      <div class="grid grid-cols-2 place-items-center">
-        <div class="text-center h-full">
+      <div class="md:grid md:grid-cols-2 md:place-items-center">
+        <div class="text-center h-full mb-3 md:m-0">
           <Card
             icon="galeria.svg"
             icon_name="galeria"
             title="Galería de fotos"
-            text="Encontrarás fauna y flora de belleza única natural, conéctate con la historia de un pueblo aguerrido y sorpréndete con sus bellos paisajes."
-            link="/nosotros"
-            nameLink="Conoce más"
+            text="La reserva tiene una fauna y flora única y sorprendente. Conecta con la emocionante historia de un pueblo valiente y aguerrido y déjate maravillar por los impresionantes paisajes naturales llenos de sorpresas."
+            link="/galeria"
+            nameLink="Ver la galería !"
           />
         </div>
         <div class="text-center h-full">
@@ -94,15 +94,15 @@ import Title2Inicio from "../components/Title2Inicio.astro";
             icon="contactanos.svg"
             icon_name="contactanos"
             title="Contáctanos"
-            text="La reserva se encuentra a 20 minutos de la ciudad de Ibagué, puedes visitarnos."
-            link="/nosotros"
-            nameLink="Conoce más"
+            text="Te invitamos a comunicarte con nosotros a través de nuestro formulario en línea, por mensaje de WhatsApp o por medio de nuestras diversas redes sociales ¡Estamos emocionados de conectarnos contigo!"
+            link="/contactanos"
+            nameLink="Comunicate con nosotros !"
           />
         </div>
       </div>
     </div>
     <div class="container m-auto pb-28">
-      <Title2Inicio text1="Nuestros visitantes" text2="dicen..." />
+      <Title2Inicio text1="Nuestros" text2="aliados" />
       <div>
         <CardOpinion
           nombreVisitante="Salvador Zinatelli"
@@ -131,7 +131,7 @@ import Title2Inicio from "../components/Title2Inicio.astro";
       </div>
     </div>
     <div class="container m-auto">
-      <Visitas />
+      <Visitas client:load />
       
     </div>
   </div>
