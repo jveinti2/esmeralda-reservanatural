@@ -1,0 +1,19 @@
+---
+const { title, text, text2, link, nameLink, icon, icon_name, url_maps } = Astro.props;
+---
+
+<div class="p-6 bg-white border border-gray-200 rounded-lg shadow-md">
+  <img class="w-10 m-auto" src={icon} alt={icon_name} />
+
+  <h5 class="mb-2 text-2xl font-semibold tracking-tight">
+    {title}
+  </h5>
+
+  <p class="mb-3 font-normal text-gray-500">
+    {text}
+    <br />
+    {text2}
+  </p>
+    <iframe class="container m-auto rounded-lg" src={url_maps} width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+</div>

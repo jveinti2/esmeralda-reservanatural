@@ -6,8 +6,8 @@ import Title1 from "../components/Title1.astro";
 import CardCentro from "../components/CardCentro.astro";
 import Visitas from "../components/Visitas.astro";
 import Title2Inicio from "../components/Title2Inicio.astro";
+import CardContacto from "../components/CardContacto.astro";
 ---
-
 
 <Layout title="La Esmeralda Reserva Natural">
   <div
@@ -15,90 +15,92 @@ import Title2Inicio from "../components/Title2Inicio.astro";
   >
     <div class="container m-auto h-screen">
       <Title1 text1="Reserva Natural" text2="La Esmeralda" />
-      <p class="text-2xl font-extrabold drop-shadow-xl shadow-black text-white">
+      <p
+        class="text-lg md:text-2xl font-bold md:font-extrabold drop-shadow-xl shadow-black text-white"
+      >
         HOGAR LEGENDARIO DE LAS OSTRAS DE AGUA DULCE. Somos un oasis de
         naturaleza para la fauna🐍 y la flora🌺. Estamos en Doima, municipio de
         Piedras – Tolima, ubicados a la rivera del río Opia.
-
-        <a href="#nosotros"
-          class="px-5 py-1 rounded-2xl bg-lime-500 text-white transition-all ease-in- duration-75 hover:shadow-lg"
-        >
-          ¡ESTÁS INVITADO!
-        </a>
       </p>
+      <div class="mt-10 text-center">
+        <a
+          href="#nosotros"
+          class="text-lg md:text-2xl px-5 py-1 rounded-2xl bg-lime-500 text-white transition-all ease-in- duration-75 hover:shadow-lg"
+        >
+          ¡únete a la reserva!
+        </a>
+      </div>
     </div>
     <div id="nosotros" class="container m-auto pb-28">
       <Title2Inicio text1="Nuestra" text2="Reserva" />
-
-      <div>
+      <div class="space-y-10">
         <div class="text-center">
           <CardCentro
             icon="acount.svg"
             icon_name="nosotros"
             title="Nosotros"
-            text="Hace algún tiempo, dos personas apasionadas por la naturaleza iniciaron su sueño de ser guardianes de una porción de terreno en Doima, Piedras en Tolima, que gradualmente convirtieron en un oasis para la fauna y la flora silvestre que transita por el corredor biológico del Río Opia."
+            text="Hace algún tiempo, dos personas apasionadas por la naturaleza iniciamos el sueño de ser guardianes de una porción de terreno en Doima, Piedras en Tolima, que gradualmente convirtieron en un oasis para la fauna y la flora silvestre que transita por el corredor biológico del Río Opia."
             text2="Hoy, después de 7 años, somos la Reserva Natural de la Sociedad Civil (RNSC) 151-20 La Esmeralda, según la resolución No. 227 del 2 de diciembre de 2022, emitida por el Ministerio del Medio Ambiente a través de Parques Nacionales. Seguimos creyendo que todos podemos pasar de la intención a los hechos."
             link="https://www.esmeraldareservanatural.com/recorrido"
             nameLink="Conoce más"
           />
         </div>
-      </div>
 
-      <div
-        class="m-3 lg:mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl"
-      >
-        <div class="text-center">
-          <Card
-            icon="hatExplorer.svg"
-            icon_name="aliado"
-            title="Vincúlate a la reserva"
-            text="Únete a la misión de proteger la biodiversidad desde cualquier parte del mundo! Envía tu solicitud y forma parte de nuestra comunidad de personas comprometidas con la conservación. Estamos emocionados de contar contigo como un aliado valioso en esta importante causa."
-            link="/contactanos"
-            nameLink="Vincúlate !"
-          />
+        <div
+          class="lg:mx-auto md:grid md:grid-cols-2 lg:grid-cols-2 lg:max-w-5xl md:gap-10"
+        >
+          <div class="text-center">
+            <Card
+              icon="hatExplorer.svg"
+              icon_name="aliado"
+              title="Vincúlate a la reserva"
+              text="Únete a la misión de proteger la biodiversidad desde cualquier parte del mundo! Envía tu solicitud y forma parte de nuestra comunidad de personas comprometidas con la conservación. Estamos emocionados de contar contigo como un aliado valioso en esta importante causa."
+              link="/contactanos"
+              nameLink="Vincúlate !"
+            />
+          </div>
+          <div class="text-center">
+            <Card
+              icon="ecosistema.svg"
+              icon_name="ecosistema"
+              title="Nuestros ecosistemas"
+              text="Nuestra reserva cuenta con un ecosistema de bosque seco tropical, corredor biológico de la fauna por estar al margen del río Opia. Sabías que el bosque seco tropical es uno de los ecosistemas más amenazados  del mundo, en Colombia. Solo queda el 8 % de los 9 millones de hectáreas que originalmente cubría"
+              link="/reserva"
+              nameLink="Conoce más"
+            />
+          </div>
+          <div class="text-center">
+            <Card
+              icon="volunteer.svg"
+              icon_name="voluntariado"
+              title="Apoyo a la reserva"
+              text="Únete a la aventura de ser parte de la conservación de nuestro planeta y forma parte de la comunidad de voluntarios en la reserva. Tu colaboración es fundamental para preservar la biodiversidad y garantizar un futuro sostenible para las próximas generaciones."
+              link="/contactanos"
+              nameLink="Hazte voluntario !"
+            />
+          </div>
+          <div class="text-center">
+            <Card
+              icon="galeria.svg"
+              icon_name="galeria"
+              title="Galería de fotos"
+              text="La reserva tiene una fauna y flora única y sorprendente. Conecta con la emocionante historia de un pueblo valiente y aguerrido y déjate maravillar por los impresionantes paisajes naturales llenos de sorpresas."
+              link="/galeria"
+              nameLink="Ver la galería !"
+            />
+          </div>
         </div>
         <div class="text-center">
-          <Card
-            icon="ecosistema.svg"
-            icon_name="ecosistema"
-            title="Nuestros ecosistemas"
-            text="Nuestra reserva alberga un vibrante ecosistema de bosque seco tropical y es un corredor biológico vital para la diversidad de fauna. Además, su ubicación al margen del río Opia brinda una gran cantidad de oportunidades para explorar la belleza natural de la región y aprender sobre su importancia ecológica."
-            link="/reserva"
-            nameLink="Conoce más"
-          />
-        </div>
-        <div class="text-center">
-          <Card
-            icon="volunteer.svg"
-            icon_name="voluntariado"
-            title="Apoyo a la reserva"
-            text="Únete a la aventura de ser parte de la conservación de nuestro planeta y forma parte de la comunidad de voluntarios en la reserva. Tu colaboración es fundamental para preservar la biodiversidad y garantizar un futuro sostenible para las próximas generaciones."
-            link="/contactanos"
-            nameLink="Hazte voluntario !"
-          />
-        </div>
-      </div>
-      <div class="md:grid md:grid-cols-2 md:place-items-center">
-        <div class="text-center h-full mb-3 md:m-0">
-          <Card
-            icon="galeria.svg"
-            icon_name="galeria"
-            title="Galería de fotos"
-            text="La reserva tiene una fauna y flora única y sorprendente. Conecta con la emocionante historia de un pueblo valiente y aguerrido y déjate maravillar por los impresionantes paisajes naturales llenos de sorpresas."
-            link="/galeria"
-            nameLink="Ver la galería !"
-          />
-        </div>
-        <div class="text-center h-full">
-          <Card
+          <CardContacto
             icon="contactanos.svg"
             icon_name="contactanos"
             title="Contáctanos"
-            text="Te invitamos a comunicarte con nosotros a través de nuestro formulario en línea, por mensaje de WhatsApp o por medio de nuestras diversas redes sociales ¡Estamos emocionados de conectarnos contigo!"
+            text="La reserva se encuentra a 20 minutos de la ciudad de Ibagué, en el departamento del Tolima, Colombia"
+            url_maps="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.919315965023!2d-74.98013618552636!3d4.4261321452102464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38cdb01f199d5b%3A0x9a7b95a195fa8778!2sReserva%20Natural%20La%20Esmeralda%20Doima!5e0!3m2!1ses-419!2sco!4v1675908202324!5m2!1ses-419!2sco"
             link="/contactanos"
             nameLink="Comunicate con nosotros !"
           />
-        </div>
+        </div>      
       </div>
     </div>
     <div class="container m-auto pb-28">
@@ -132,7 +134,6 @@ import Title2Inicio from "../components/Title2Inicio.astro";
     </div>
     <div class="container m-auto">
       <Visitas client:load />
-      
     </div>
   </div>
 </Layout>
