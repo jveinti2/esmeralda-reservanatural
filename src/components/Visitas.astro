@@ -2,10 +2,11 @@
   window.onload = function () {
     var visitas = document.getElementById("visitas");
     var url = "https://api.countapi.xyz/hit/esmeraldareservanatural.com/visitas";
+    const viewOdl = 1400;
     fetch(url)
       .then((res) => res.json())
       .then((out) => {
-        visitas.innerHTML = `${out.value}+`;
+        visitas.innerHTML = `${out.value + viewOdl}+ `;
       })
       .catch((err) => {
         throw err;
@@ -18,14 +19,14 @@
     <dl class="grid max-w-screen-md gap-8 mx-auto text-white sm:grid-cols-3">
       <div class="flex flex-col items-center justify-center">
         <dt id="visitas" class="mb-2 text-3xl md:text-4xl font-extrabold"></dt>
-        <dd class="font-light text-white">visitantes</dd>
+        <dd class="font-light text-white">visitantes en la página</dd>
       </div>
       <div class="flex flex-col items-center justify-center">
-        <dt class="mb-2 text-3xl md:text-4xl font-extrabold">11+</dt>
+        <dt class="mb-2 text-3xl md:text-4xl font-extrabold">84+</dt>
         <dd class="font-light text-white">padrinos</dd>
       </div>
       <div class="flex flex-col items-center justify-center">
-        <dt class="mb-2 text-3xl md:text-4xl font-extrabold">4+</dt>
+        <dt class="mb-2 text-3xl md:text-4xl font-extrabold">10+</dt>
         <dd class="font-light text-white">oganizaciones</dd>
       </div>
     </dl>
