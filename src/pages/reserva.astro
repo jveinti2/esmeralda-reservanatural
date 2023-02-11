@@ -3,7 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import CardMision from "../components/CardMision.astro";
 import Title2 from "../components/Title2.astro";
 import CardTeam from "../components/CardTeam.astro";
-import Title11 from "../components/Title11.astro"
+import Title11 from "../components/Title11.astro";
+import Testimonial from "../components/Testimonial.astro";
 ---
 
 <Layout title="La Esmeralda Reserva Natural | Reserva">
@@ -36,53 +37,7 @@ import Title11 from "../components/Title11.astro"
         icon="/reserva/vision.svg"
       />
     </div>
-    <div class="mb-16">
-      <Title2 text1="Reglamento" text2="interno" />
-      <div>
-        <ul role="list" class="pl-5 space-y-3 text-gray-500">
-          <li>
-            1. No llevar mascotas, radiograbadoras o equipos de sonido, drones,
-            envases de vidrio, plástico, armas, cuchillos, navajas,
-            encendedores, fósforos, cigarrillos y bebidas alcohólicas.
-          </li>
 
-          <li>
-            2. Todos los visitantes de la reserva deben prometer comportamientos
-            de cuidado, preservación, protección y no contaminación del medio
-            ambiente sin excepción alguna.
-          </li>
-
-          <li>
-            3. No marque, no escriba o cause daño a las cortezas de los árboles.
-          </li>
-
-          <li>4. No bote basura.</li>
-
-          <li>5. No fume dentro de la reserva.</li>
-
-          <li>6. Manténgase siempre dentro de los senderos demarcados.</li>
-
-          <li>7. No arranque las plantas.</li>
-
-          <li>8. No grite, no haga ruidos fuertes mientras este en la zona
-            corredor biológico.
-          </li>
-
-          <li>9. No Sustraer muestras biológicas de una reserva natural, puede
-            ocasionar daños a ellas.
-          </li>
-
-          <li>10. No alimentar a los animales.</li>
-
-          <p>
-            Nota: Incumplir este reglamento da como consecuencia la expulsión
-            inmediata del visitante y en algunos casos le puede ocasionar
-            sanciones legales. Ayúdanos a cuidar la naturaleza. “No te lleves
-            nada, no dejes nada”
-          </p>
-        </ul>
-      </div>
-    </div>
     <div>
       <Title2 text1="Nuestro" text2="equipo" />
       <div>
@@ -126,6 +81,88 @@ import Title11 from "../components/Title11.astro"
             />
           </div>
         </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <Title2 text1="Colaboradores" />
+        <div class="md:flex">
+          <Testimonial
+            frase="!Tenemos estanque!"
+            foto="https://www.esmeraldareservanatural.com/images/Alfredo.jpg"
+            nombre="Alfredo Várgas"
+            agradecimiento="Gracias ingeniero por su valioso aporte, con su ayuda hoy tenemos un estanque bionatural."
+          />
+          <Testimonial
+            frase="Mula parada no gana flete"
+            foto="https://www.esmeraldareservanatural.com/images/Mauricio.jpg"
+            nombre="Mauricio Oviedo"
+            agradecimiento="Gracias por su aporte para embellecer la reserva."
+          />
+        </div>
+        <div class="md:flex">
+          <Testimonial
+            frase="¡Vamos a pintar!"
+            foto="https://www.esmeraldareservanatural.com/images/Sandra.jpg"
+            nombre="Sandra Avendaño"
+            agradecimiento="Toda una artista, gracias a su aporte e inspiración hizo realidad el camino de las mariposas."
+          />
+          <Testimonial
+            frase="¡Lo hacemos hoy mismo!"
+            foto="https://www.esmeraldareservanatural.com/images/Edwin.jpg"
+            nombre="Mauricio Oviedo"
+            agradecimiento="Gracias por su aporte para embellecer la reserva."
+          />
+        </div>
+      </div>
+    </div>
+    <div class="mb-16">
+      <Title2 text1="Reglamento" text2="interno" />
+      <div>
+        <ul role="list" class="pl-5 space-y-3 text-gray-500">
+          <li>
+            1. No llevar mascotas, radiograbadoras o equipos de sonido, drones,
+            envases de vidrio, plástico, armas, cuchillos, navajas,
+            encendedores, fósforos, cigarrillos y bebidas alcohólicas.
+          </li>
+
+          <li>
+            2. Todos los visitantes de la reserva deben prometer comportamientos
+            de cuidado, preservación, protección y no contaminación del medio
+            ambiente sin excepción alguna.
+          </li>
+
+          <li>
+            3. No marque, no escriba o cause daño a las cortezas de los árboles.
+          </li>
+
+          <li>4. No bote basura.</li>
+
+          <li>5. No fume dentro de la reserva.</li>
+
+          <li>6. Manténgase siempre dentro de los senderos demarcados.</li>
+
+          <li>7. No arranque las plantas.</li>
+
+          <li>
+            8. No grite, no haga ruidos fuertes mientras este en la zona
+            corredor biológico.
+          </li>
+
+          <li>
+            9. No Sustraer muestras biológicas de una reserva natural, puede
+            ocasionar daños a ellas.
+          </li>
+
+          <li>10. No alimentar a los animales.</li>
+
+          <p>
+            Nota: Incumplir este reglamento da como consecuencia la expulsión
+            inmediata del visitante y en algunos casos le puede ocasionar
+            sanciones legales. Ayúdanos a cuidar la naturaleza. “No te lleves
+            nada, no dejes nada”
+          </p>
+        </ul>
       </div>
     </div>
     <div class="container m-auto">

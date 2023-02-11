@@ -11,21 +11,20 @@ import CardContacto from "../components/CardContacto.astro";
 
 <Layout title="La Esmeralda Reserva Natural">
   <div
-    class="bg-[url('/fondos/fondo5.avif')] bg-cover bg-center bg-fixed pb-10 p-5"
+    class="bg-[url('/fondos/fondo5-2.avif')] bg-cover bg-center bg-fixed pb-10 p-5"
   >
-    <div class="container m-auto h-screen">
+    <div class="container m-auto h-screen space-y-0 lg:space-y-6">
       <Title1 text1="Reserva Natural" text2="La Esmeralda" />
       <p
         class="text-lg md:text-2xl font-bold md:font-extrabold drop-shadow-xl shadow-black text-white"
       >
-        HOGAR LEGENDARIO DE LAS OSTRAS DE AGUA DULCE. Somos un oasis de
-        naturaleza para la fauna🐍 y la flora🌺. Estamos en Doima, municipio de
-        Piedras – Tolima, ubicados a la rivera del río Opia.
+        HOGAR LEGENDARIO DE LAS OSTRAS DE AGUA DULCE. 
       </p>
-      <div class="mt-10 text-center">
+      <p class="text-lg md:text-2xl font-bold md:font-extrabold drop-shadow-xl shadow-black text-white">Somos un oasis de naturaleza para la fauna🐍 y la flora🌺. Estamos en Doima, municipio de Piedras – Tolima, ubicados a la rivera del río Opia.</p>
+      <div class="m-auto relative h-16 lg:h-32 w-64">
         <a
           href="#nosotros"
-          class="text-lg md:text-2xl px-5 py-1 rounded-2xl bg-lime-500 text-white transition-all ease-in- duration-75 hover:shadow-lg"
+          class="w-full text-center absolute bottom-0 right-0 text-lg md:text-2xl px-5 py-1 rounded-2xl bg-lime-500 text-white transition-all ease-in- duration-75 hover:shadow-lg"
         >
           ¡únete a la reserva!
         </a>
@@ -47,7 +46,7 @@ import CardContacto from "../components/CardContacto.astro";
         </div>
 
         <div
-          class="lg:mx-auto md:grid md:grid-cols-2 lg:grid-cols-2 lg:max-w-5xl md:gap-10"
+          class="lg:mx-auto space-y-10 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-2 lg:max-w-5xl md:gap-10"
         >
           <div class="text-center">
             <Card
@@ -100,39 +99,112 @@ import CardContacto from "../components/CardContacto.astro";
             link="/contactanos"
             nameLink="Comunicate con nosotros !"
           />
-        </div>      
+        </div>
       </div>
     </div>
     <div class="container m-auto pb-28">
       <Title2Inicio text1="Nuestros" text2="aliados" />
       <div>
-        <CardOpinion
-          nombreVisitante="Salvador Zinatelli"
-          profesionVisitante="Consultor migratorio / Educativo – Yolochoice"
-          opinion="Vivo en Vancouver Canadá fui a Colombia, conocí parte de sus territorios y fue muy agradable encontrar una reserva natural tan cerca de Ibagué y que realmente tiene una belleza única como son las ostras de agua dulce y un ecosistema privilegiado, Tuve la oportunidad de practicar de un pequeño retiro y clases de Yoga, un lugar excelente para descansar y renovarse. Recomiendo mucho la visita y estadía de La reserva natural Esmeralda."
-          imagenVisitante="https://www.esmeraldareservanatural.com/images/salvador.png"
-        />
-        <CardOpinion
-          nombreVisitante="Sybila Guerra"
-          profesionVisitante="Psicologa / Emprendedora - Seryoga"
-          opinion="Yo ya fui y viste la reserva es un lugar mágico, la experiencia fue maravillosa, lo que más me conecto son sus expírales llenos de energía renovadora, desde mi experiencia profesional también puedo opinar que el sitio es espectacular para la conexión interior, recomiendo mucho visitarlo."
-          imagenVisitante="https://www.esmeraldareservanatural.com/images/Sybila.png"
-        />
-        <CardOpinion
-          nombreVisitante="Cecilia Leal"
-          profesionVisitante="Ing. Forestal / Fundacion Ambiental Oasis de Vida"
-          opinion="Conocer y recorrer la Reserva Natural, es una gran experiencia, en la que se puede tener contacto directo con la naturaleza, esta a solo 40 minutos de Ibagué, por una vía pavimentada. Este pequeño paraíso enclavado en el bosque seco es orgullo para la región y para sus propietarios, que son ejemplo de compromiso en protección y conservación, de un importante, singular y frágil ecosistema, como lo es el ecosistema seco, prioridad de conservación a nivel mundial."
-          imagenVisitante="https://www.esmeraldareservanatural.com/images/cecilia.png"
-        />
-        <CardOpinion
-          nombreVisitante="Milton Artunduaga"
-          profesionVisitante="Psicologa / Emprendedora - Seryoga"
-          opinion="La tierra tiene música para que la escuchen, los arboles cantan con el viento mientras las aves bailan entre si, las flores sonríen al ser tocadas delicadamente, los caminos guardan las historias de los caminantes que los recorren, las quebradas entonan sus mejores melodías junto con las rocas que las protegen. En la Reserva Natural la Esmeralda puedes escuchar esta sinfonía una y otra vez, al cerrar los ojos o al mirar con detalle la mariposa que baila entre sus coloridos matices."
-          imagenVisitante="https://www.esmeraldareservanatural.com/images/milton.png"
-        />
+        <div class="space-y-10">
+          <CardOpinion
+            nombreVisitante="Salvador Zinatelli"
+            profesionVisitante="Consultor migratorio / Educativo – Yolochoice"
+            opinion="Vivo en Vancouver Canadá fui a Colombia, conocí parte de sus territorios y fue muy agradable encontrar una reserva natural tan cerca de Ibagué y que realmente tiene una belleza única como son las ostras de agua dulce y un ecosistema privilegiado, Tuve la oportunidad de practicar de un pequeño retiro y clases de Yoga, un lugar excelente para descansar y renovarse. Recomiendo mucho la visita y estadía de La reserva natural Esmeralda."
+            imagenVisitante="https://www.esmeraldareservanatural.com/images/salvador.png"
+          />
+          <CardOpinion
+            nombreVisitante="Sybila Guerra"
+            profesionVisitante="Psicologa / Emprendedora - Seryoga"
+            opinion="Yo ya fui y viste la reserva es un lugar mágico, la experiencia fue maravillosa, lo que más me conecto son sus expírales llenos de energía renovadora, desde mi experiencia profesional también puedo opinar que el sitio es espectacular para la conexión interior, recomiendo mucho visitarlo."
+            imagenVisitante="https://www.esmeraldareservanatural.com/images/Sybila.png"
+          />
+          <CardOpinion
+            nombreVisitante="Cecilia Leal"
+            profesionVisitante="Ing. Forestal / Fundacion Ambiental Oasis de Vida"
+            opinion="Conocer y recorrer la Reserva Natural, es una gran experiencia, en la que se puede tener contacto directo con la naturaleza, esta a solo 40 minutos de Ibagué, por una vía pavimentada. Este pequeño paraíso enclavado en el bosque seco es orgullo para la región y para sus propietarios, que son ejemplo de compromiso en protección y conservación, de un importante, singular y frágil ecosistema, como lo es el ecosistema seco, prioridad de conservación a nivel mundial."
+            imagenVisitante="https://www.esmeraldareservanatural.com/images/cecilia.png"
+          />
+          <CardOpinion
+            nombreVisitante="Milton Artunduaga"
+            profesionVisitante="Psicologa / Emprendedora - Seryoga"
+            opinion="La tierra tiene música para que la escuchen, los arboles cantan con el viento mientras las aves bailan entre si, las flores sonríen al ser tocadas delicadamente, los caminos guardan las historias de los caminantes que los recorren, las quebradas entonan sus mejores melodías junto con las rocas que las protegen. En la Reserva Natural la Esmeralda puedes escuchar esta sinfonía una y otra vez, al cerrar los ojos o al mirar con detalle la mariposa que baila entre sus coloridos matices."
+            imagenVisitante="https://www.esmeraldareservanatural.com/images/milton.png"
+          />
+        </div>
       </div>
     </div>
     <div class="container m-auto">
+      <!-- <Title2Inicio text1="Nuestros" text2="aliados" /> -->
+      <section>
+        <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+          <h2
+            class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-white"
+          >
+            Gracias acompañarnos en esta aventura
+          </h2>
+          <div
+            class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6"
+          >
+            <a
+              target="_blank"
+              href="https://conservatoriodeltolima.edu.co/"
+              class="flex justify-center items-center"
+            >
+              <img src="/logos/conservatorio.avif" alt="conservatorio" />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.unibague.edu.co/"
+              class="flex justify-center items-center"
+            >
+              <img src="/logos/unibague.avif" alt="unibague" />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/Aprocade/"
+              class="flex justify-center items-center"
+            >
+              <img src="/logos/aprocade.avif" alt="aprocade" />
+            </a>
+            <a
+              target="_blank"
+              href="https://doima.colegiosonline.com/"
+              class="flex justify-center items-center"
+            >
+              <img src="/logos/iedudoima.avif" alt="iedudoima" />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.parquesnacionales.gov.co/portal/es/"
+              class="flex justify-center it ems-center"
+            >
+              <img
+                src="/logos/parques-naturales.avif"
+                alt="parques-naturales"
+              />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.cortolima.gov.co/"
+              class="flex justify-center items-center"
+            >
+              <img src="/logos/cortolima.avif" alt="cortolima" />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/people/Gesti%C3%B3n-ambiental-piedras/100080306673404/?paipv=0&eav=AfYbQ_BR6xarkFGISfr9i0BZROA9aKij866xz6nmNzdDgJzBSpAgnqQzwdZjtsE9nBc&_rdr"
+              class="flex justify-center items-center"
+            >
+              <img src="/logos/gap.avif" alt="gap" />
+            </a>
+            <a target="_blank" href="https://www.policia.gov.co/">
+              <img src="/logos/policia.avif" alt="policia" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container m-auto pt-28">
       <Visitas client:load />
     </div>
   </div>
