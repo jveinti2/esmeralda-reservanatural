@@ -1,0 +1,367 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Title11 from "../components/Title11.astro";
+import Title2 from "../components/Title2.astro";
+import Testimonial from "../components/Testimonial.astro";
+import CardServiciosL from "../components/CardServiciosL.astro";
+---
+
+<Layout title="La Esmeralda Reserva Natural | Contactanos">
+  <div
+    class="bg-[url('/apoyanos/fondo.avif')] bg-cover bg-center bg-no-repeat p-5 md:p-10 lg:p-20"
+  >
+    <div class="container m-auto">
+      <Title11 text1="¿Te gustaría" text2="vincularte?" />
+    </div>
+  </div>
+  <div class="px-4 container m-auto">
+    <div class="pt-20">
+      <div class="container m-auto text-center">
+        <p
+          class="mb-8 text-lg font-normal text-gray-900 lg:text-xl sm:px-16 xl:px-48"
+        >
+          Tenemos diferentes opciones para que te vincules a la reserva y seas
+          contribuidor en esta aventura de la conservación natural.
+        </p>
+      </div>
+      <!-- Sección voluntariado -->
+      <section class="bg-white">
+        <div
+          class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+        >
+          <img
+            class="w-full rounded-lg"
+            src="https://www.ecoticias.com/wp-content/uploads/2022/01/XOUM_os_tcm7-341311_noticia.jpg"
+            alt="dashboard image"
+          />
+
+          <div class="mt-4 md:mt-0">
+            <h2
+              class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900"
+            >
+              Voluntario en la reserva.
+            </h2>
+            <p class="mb-6 font-light text-gray-500 md:text-lg">
+              El objetivo del programa de voluntariado es la realización de
+              acciones de conservación y preservación del medio ambiente, esta
+              dirigido a mayores de edad dispuestos a donar tiempo de trabajo a
+              la madre tierra interactuando con labores diarias, propias de la
+              reserva. El voluntariado tiene dos categorías:
+              <ul class="mb-6 font-light text-gray-500 md:text-lg">
+                <li>
+                  1. Aprendices: Personas que no han realizado actividades
+                  ambientales ni agropecuarias.
+                </li>
+                <li>
+                  2. Expertos: personas que acreditan experiencia en algún área
+                  ambiental o agropecuaria.
+                </li>
+                <a
+                  class="font-bold flex items-center gap-1"
+                  href="/vinculate-como/voluntario"
+                  >Más acerca del voluntariado <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-box-arrow-up-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+                    ></path>
+                  </svg></a
+                >
+              </ul>
+            </p>
+
+            <!-- Modal toggle -->
+            <button
+              data-modal-target="defaultModal"
+              data-modal-toggle="defaultModal"
+              class="inline-flex items-center text-white bg-lime-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:ring-primary-900"
+              type="button"
+            >
+              Vincúlate como voluntario
+              <svg
+                class="ml-2 -mr-1 w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path></svg
+              >
+            </button>
+
+            <!-- Main modal -->
+            <div
+              id="defaultModal"
+              tabindex="-1"
+              aria-hidden="true"
+              class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full"
+            >
+              <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+                <!-- Modal content -->
+                <div
+                  class="relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5"
+                >
+                  <!-- Modal header -->
+                  <div
+                    class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600"
+                  >
+                    <h3
+                      class="text-lg font-semibold text-gray-900 dark:text-white"
+                    >
+                      Formulario de voluntario
+                    </h3>
+                    <button
+                      type="button"
+                      class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                      data-modal-toggle="defaultModal"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        ><path
+                          fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"></path></svg
+                      >
+                      <span class="sr-only">Close modal</span>
+                    </button>
+                  </div>
+                  <!-- Modal body -->
+                  <form action="#">
+                    <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                      <div>
+                        <label
+                          for="name"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >Nombre*</label
+                        >
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                          placeholder="Esmeralda Becerra"
+                        />
+                      </div>
+                      <div>
+                        <label
+                          for="brand"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >Correo*</label
+                        >
+                        <input
+                          type="text"
+                          name="brand"
+                          id="brand"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                          placeholder="esmeralda@correo.com.co"
+                        />
+                      </div>
+                      <div>
+                        <label
+                          for="price"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >Fecha inicio del voluntariado</label
+                        >
+                        <input
+                          type="date"
+                          name="price"
+                          id="price"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        />
+                      </div>
+                      <div>
+                        <label
+                          for="price"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >Fecha fin del voluntariado</label
+                        >
+                        <input
+                          type="date"
+                          name="price"
+                          id="price"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        />
+                      </div>
+                      <div class="sm:col-span-2">
+                        <label
+                          for="description"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >¿Tienes algún comentario adicional?</label
+                        >
+                        <textarea
+                          id="description"
+                          rows="5"
+                          class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                          placeholder="Es un gusto unirme a su equipo de voluntarios"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                      <button
+                        type="submit"
+                        class="flex aligne-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 border border-lime-500"
+                      >
+                        reservar mi voluntariado
+                        <img class="w-10 ml-2" src="/payu.png" alt="" />
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sección recorrido virtual -->
+      <section class="bg-white">
+        <div
+          class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+        >
+          <div class="mt-4 md:mt-0">
+            <h2
+              class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900"
+            >
+              Aventura virtual.
+            </h2>
+            <p class="mb-6 font-light text-gray-500 md:text-lg">
+              Nuestro recorrido virtual les permitirá explorar los rincones más
+              escondidos de la reserva, aprender sobre su fauna y flora y
+              conocer más sobre nuestras acciones para proteger este ecosistema
+              tan valioso.
+            </p>
+            <p class="mb-6 font-light text-gray-500 md:text-lg">
+              Además, al realizar este recorrido virtual, estarán apoyando
+              directamente la conservación de la reserva. Cada visita virtual es
+              un paso más hacia nuestro objetivo de preservar este lugar para
+              las generaciones futuras.
+              <a
+                class="font-bold flex items-center gap-1"
+                href="/vinculate-como/visitante-virtual"
+                >Más acerca de la aventura virtual<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-box-arrow-up-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+                  ></path>
+                </svg></a
+              >
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center text-white bg-lime-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:ring-primary-900"
+            >
+              Hacer el recorrido
+              <svg
+                class="ml-2 -mr-1 w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path></svg
+              >
+            </a>
+          </div>
+          <img
+            class="w-full rounded-lg"
+            src="/apoyanos/recorrido.png"
+            alt="dashboard image"
+          />
+        </div>
+      </section>
+      <!-- Sección donaciones -->
+      <section class="bg-white">
+        <div
+          class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+        >
+          <img
+            class="w-full rounded-lg"
+            src="https://i.pinimg.com/564x/50/92/2a/50922a16cc4a57d47a6b497619a409e0.jpg"
+            alt="dashboard image"
+          />
+          <div class="mt-4 md:mt-0">
+            <h2
+              class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900"
+            >
+              Donacion.
+            </h2>
+            <p class="mb-6 font-light text-gray-500 md:text-lg">
+              Una forma en la que pueden vincularse es a través de una donación.
+              Cada contribución, por mínima que sea, es esencial para apoyar
+              nuestras acciones de conservación y protección de la reserva.
+            </p>
+            <p class="mb-6 font-light text-gray-500 md:text-lg">
+              Como donante, estarán vinculados a nuestra causa y serán parte
+              activa de la preservación de este ecosistema único. Además,
+              recibirán información periódica sobre nuestras actividades y los
+              avances en nuestro trabajo de conservación.
+              <a
+                  class="font-bold flex items-center gap-1"
+                  href="/vinculate-como/donante"
+                  >Más acerca ser donante <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-box-arrow-up-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+                    ></path>
+                  </svg></a
+                >
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center text-white bg-lime-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:ring-primary-900"
+            >
+              Apoyar con una donación
+              <svg
+                class="ml-2 -mr-1 w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path></svg
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</Layout>
