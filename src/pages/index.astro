@@ -9,29 +9,52 @@ import Title2Inicio from "../components/Title2Inicio.astro";
 import CardContacto from "../components/CardContacto.astro";
 ---
 
+<style>
+  #btn-unete {
+    animation: headShake; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite; /* apply the animation infinitely */
+
+  }
+</style>
+
 <Layout title="La Esmeralda Reserva Natural">
   <div
     class="bg-[url('/fondos/fondo5-2.avif')] bg-cover bg-center bg-fixed pb-10 p-5"
   >
-    <div class="container m-auto h-screen space-y-0 lg:space-y-6">
+    <div class="container m-auto h-screen space-y-24 lg:space-y-6">
       <Title1 text1="Reserva Natural" text2="La Esmeralda" />
-      <p
-        class="text-lg md:text-2xl font-bold md:font-extrabold drop-shadow-xl shadow-black text-white"
-      >
-        HOGAR LEGENDARIO DE LAS OSTRAS DE AGUA DULCE.
-      </p>
-      <p
-        class="text-lg md:text-2xl font-bold md:font-extrabold drop-shadow-xl shadow-black text-white"
-      >
-        Somos un oasis de naturaleza para la fauna🐍 y la flora🌺. Estamos en
-        Doima, municipio de Piedras – Tolima, ubicados a la rivera del río Opia.
-      </p>
-      <div class="m-auto relative h-16 lg:h-32 w-64">
-        <a
-          href="#nosotros"
-          class="w-full text-center absolute bottom-0 right-0 text-lg md:text-2xl px-5 py-1 rounded-2xl bg-lime-500 text-white transition-all ease-in- duration-75 hover:shadow-lg"
+      <div class="space-y-6">
+        <p
+          class="text-lg md:text-2xl md:font-extrabold drop-shadow-xl shadow-black text-white"
         >
-          ¡únete a la reserva!
+          HOGAR LEGENDARIO DE LAS OSTRAS DE AGUA DULCE.
+        </p>
+        <p
+          class="text-lg md:text-2xl font-light md:font-extrabold drop-shadow-xl shadow-black text-white"
+        >
+          Somos un oasis de naturaleza para la fauna🐍 y la flora🌺. Estamos en
+          Doima, municipio de Piedras – Tolima, ubicados a la rivera del río
+          Opia.
+        </p>
+      </div>
+      <div class="grid place-items-center">
+        <a href="#nosotros"
+          id="btn-unete"
+          class="flex items-center space-x-2 text-lg md:text-2xl px-5 py-1 rounded-2xl bg-lime-500 text-white transition-all ease-in- duration-75 hover:shadow-lg"
+        >
+          ¡Únete a la reserva!  <svg class="ml-1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-down-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"
+            ></path>
+          </svg>
         </a>
       </div>
     </div>
@@ -43,8 +66,8 @@ import CardContacto from "../components/CardContacto.astro";
             icon="acount.svg"
             icon_name="nosotros"
             title="Nosotros"
-            text="Hace algún tiempo, dos personas apasionadas por la naturaleza iniciamos el sueño de ser guardianes de una porción de terreno en Doima, Piedras en Tolima, que gradualmente convirtieron en un oasis para la fauna y la flora silvestre que transita por el corredor biológico del Río Opia."
-            text2="Hoy, después de 7 años, somos la Reserva Natural de la Sociedad Civil (RNSC) 151-20 La Esmeralda, según la resolución No. 227 del 2 de diciembre de 2022, emitida por el Ministerio del Medio Ambiente a través de Parques Nacionales. Seguimos creyendo que todos podemos pasar de la intención a los hechos."
+            text="Hace algún tiempo, dos personas apasionadas por la naturaleza iniciamos el sueño de ser guardianes de una porción de terreno en Doima, Piedras en Tolima, que gradualmente covertimos en un oasis para la fauna y la flora silvestre que transita por el corredor biológico del Río Opia."
+            text2="Hoy, después de 7 años, somos la Reserva Natural de la Sociedad Civil (RNSC) 151-20 La Esmeralda, según la resolución No. 227 del 2 de diciembre de 2022, emitida por el Ministerio del Medio Ambiente a través de Parques Nacionales. ¡Seguimos creyendo que todos podemos pasar de la intención a los hechos!"
             link="https://www.esmeraldareservanatural.com/recorrido"
             nameLink="Conoce más"
           />
@@ -156,7 +179,11 @@ import CardContacto from "../components/CardContacto.astro";
               href="https://conservatoriodeltolima.edu.co/"
               class="flex justify-center items-center"
             >
-              <img loading="lazy" src="/logos/conservatorio.avif" alt="conservatorio" />
+              <img
+                loading="lazy"
+                src="/logos/conservatorio.avif"
+                alt="conservatorio"
+              />
             </a>
             <a
               target="_blank"
@@ -184,7 +211,8 @@ import CardContacto from "../components/CardContacto.astro";
               href="https://www.parquesnacionales.gov.co/portal/es/"
               class="flex justify-center it ems-center"
             >
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 src="/logos/parques-naturales.avif"
                 alt="parques-naturales"
               />
@@ -206,13 +234,22 @@ import CardContacto from "../components/CardContacto.astro";
             <a target="_blank" href="https://www.policia.gov.co/">
               <img loading="lazy" src="/logos/policia.avif" alt="policia" />
             </a>
-            <a target="_blank" href="https://empresite.eleconomistaamerica.co/FUNDACION-AMBIENTAL-OASIS-VIDA-ONG.html">
+            <a
+              target="_blank"
+              href="https://empresite.eleconomistaamerica.co/FUNDACION-AMBIENTAL-OASIS-VIDA-ONG.html"
+            >
               <img loading="lazy" src="/logos/faov.avif" alt="policia" />
             </a>
-            <a target="_blank" href="https://organizacionfemeninapopular.blogspot.com/p/inicio.html">
+            <a
+              target="_blank"
+              href="https://organizacionfemeninapopular.blogspot.com/p/inicio.html"
+            >
               <img loading="lazy" src="/logos/ofp.avif" alt="policia" />
             </a>
-            <a target="_blank" href="https://organizacionfemeninapopular.blogspot.com/p/inicio.html">
+            <a
+              target="_blank"
+              href="https://organizacionfemeninapopular.blogspot.com/p/inicio.html"
+            >
               <img loading="lazy" src="/logos/comunera.avif" alt="policia" />
             </a>
           </div>
