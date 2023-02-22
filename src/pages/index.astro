@@ -14,36 +14,62 @@ import CardContacto from "../components/CardContacto.astro";
     animation: headShake; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s; /* don't forget to set a duration! */
     animation-iteration-count: infinite; /* apply the animation infinitely */
-
   }
 </style>
 
 <Layout title="La Esmeralda Reserva Natural">
-  <div
-    class="bg-[url('/fondos/fondo5-2.avif')] bg-cover bg-center bg-fixed pb-10 p-5"
-  >
-    <div class="container m-auto h-screen space-y-24 lg:space-y-6">
-      <Title1 text1="Reserva Natural" text2="La Esmeralda" />
-      <div class="space-y-6">
-        <p
-          class="text-lg md:text-2xl md:font-extrabold drop-shadow-xl shadow-black text-white"
-        >
-          HOGAR LEGENDARIO DE LAS OSTRAS DE AGUA DULCE.
-        </p>
-        <p
-          class="text-lg md:text-2xl font-light md:font-extrabold drop-shadow-xl shadow-black text-white"
-        >
-          Somos un oasis de naturaleza para la fauna🐍 y la flora🌺. Estamos en
-          Doima, municipio de Piedras – Tolima, ubicados a la rivera del río
-          Opia.
-        </p>
+  <div class="h-screen">
+    <div class="bg-[url('/fondos/fondo5-2.avif')] bg-cover">
+      <div class="h-72 p-5 space-y-20">
+        <div class="container m-auto">
+          <Title1 text1="Reserva Natural" text2="La Esmeralda" />
+        </div>
+        <div class="w-3/6">
+          <span class="text-white text-xl">
+            Hogar legendario de las otras de agua dulce.
+          </span>
+        </div>
       </div>
-      <div class="grid place-items-center">
-        <a href="#nosotros"
-          id="btn-unete"
-          class="flex items-center space-x-2 text-lg md:text-2xl px-5 py-1 rounded-2xl bg-lime-500 text-white transition-all ease-in- duration-75 hover:shadow-lg"
+      <div style="overflow: hidden;">
+        <svg
+          preserveAspectRatio="none"
+          viewBox="0 0 1200 120"
+          xmlns="http://www.w3.org/2000/svg"
+          style={{
+            fill: "#ffffff",
+            width: "125%",
+            height: 75,
+            transform: "rotate(180deg)",
+          }}
         >
-          ¡Únete a la reserva!  <svg class="ml-1"
+          <path
+            d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+            opacity=".25"></path>
+          <path
+            d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+            opacity=".5"></path>
+          <path
+            d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+    <div class="text-center space-y-10 p-5">
+      <span>
+        Somos un oasis de naturaleza para la fauna🐍 y la flora🌺.
+        <br />
+        Estamos en Doima, municipio de Piedras – Tolima, ubicados a la rivera del
+        río Opia.
+      </span>
+      <div class="grid place-items-center">
+        <a
+          style="background-color: #2c8936;"
+          href="#nosotros"
+          id="btn-unete"
+          class="flex items-center space-x-2 text-lg md:text-2xl px-5 py-1 rounded-2xl text-white transition-all ease-in- duration-75 hover:shadow-lg"
+        >
+          ¡Únete a la reserva! <svg
+            class="ml-1"
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
@@ -58,82 +84,111 @@ import CardContacto from "../components/CardContacto.astro";
         </a>
       </div>
     </div>
-    <div id="nosotros" class="container m-auto pb-28">
-      <Title2Inicio text1="Nuestra" text2="Reserva" />
-      <div class="space-y-10">
+  </div>
+
+  <div id="nosotros">
+    <div class="text-center container m-auto">
+      <Title2Inicio text1="Nuestra reserva" />
+      <CardCentro
+        icon="acount.svg"
+        icon_name="nosotros"
+        title="Nosotros"
+        text="Hace algún tiempo, dos personas apasionadas por la naturaleza iniciamos el sueño de ser guardianes de una porción de terreno en Doima, Piedras en Tolima, que gradualmente covertimos en un oasis para la fauna y la flora silvestre que transita por el corredor biológico del Río Opia."
+        text2="Hoy, después de 7 años, somos la Reserva Natural de la Sociedad Civil (RNSC) 151-20 La Esmeralda, según la resolución No. 227 del 2 de diciembre de 2022, emitida por el Ministerio del Medio Ambiente a través de Parques Nacionales. ¡Seguimos creyendo que todos podemos pasar de la intención a los hechos!"
+        link="https://www.esmeraldareservanatural.com/recorrido"
+        nameLink="Conoce más"
+      />
+
+      <div
+        class="lg:mx-auto space-y-10 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-2 lg:max-w-5xl md:gap-10"
+      >
         <div class="text-center">
-          <CardCentro
-            icon="acount.svg"
-            icon_name="nosotros"
-            title="Nosotros"
-            text="Hace algún tiempo, dos personas apasionadas por la naturaleza iniciamos el sueño de ser guardianes de una porción de terreno en Doima, Piedras en Tolima, que gradualmente covertimos en un oasis para la fauna y la flora silvestre que transita por el corredor biológico del Río Opia."
-            text2="Hoy, después de 7 años, somos la Reserva Natural de la Sociedad Civil (RNSC) 151-20 La Esmeralda, según la resolución No. 227 del 2 de diciembre de 2022, emitida por el Ministerio del Medio Ambiente a través de Parques Nacionales. ¡Seguimos creyendo que todos podemos pasar de la intención a los hechos!"
-            link="https://www.esmeraldareservanatural.com/recorrido"
+          <Card
+            icon="hatExplorer.svg"
+            icon_name="aliado"
+            title="Vincúlate a la reserva"
+            text="Únete a la misión de proteger la biodiversidad desde cualquier parte del mundo! Envía tu solicitud y forma parte de nuestra comunidad de personas comprometidas con la conservación. Estamos emocionados de contar contigo como un aliado valioso en esta importante causa."
+            link="/contactanos"
+            nameLink="Vincúlate !"
+          />
+        </div>
+        <div class="text-center">
+          <Card
+            icon="ecosistema.svg"
+            icon_name="ecosistema"
+            title="Nuestros ecosistemas"
+            text="Nuestra reserva cuenta con un ecosistema de bosque seco tropical, corredor biológico de la fauna por estar al margen del río Opia. Sabías que el bosque seco tropical es uno de los ecosistemas más amenazados  del mundo, en Colombia. Solo queda el 8 % de los 9 millones de hectáreas que originalmente cubría"
+            link="/reserva"
             nameLink="Conoce más"
           />
         </div>
-
-        <div
-          class="lg:mx-auto space-y-10 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-2 lg:max-w-5xl md:gap-10"
-        >
-          <div class="text-center">
-            <Card
-              icon="hatExplorer.svg"
-              icon_name="aliado"
-              title="Vincúlate a la reserva"
-              text="Únete a la misión de proteger la biodiversidad desde cualquier parte del mundo! Envía tu solicitud y forma parte de nuestra comunidad de personas comprometidas con la conservación. Estamos emocionados de contar contigo como un aliado valioso en esta importante causa."
-              link="/contactanos"
-              nameLink="Vincúlate !"
-            />
-          </div>
-          <div class="text-center">
-            <Card
-              icon="ecosistema.svg"
-              icon_name="ecosistema"
-              title="Nuestros ecosistemas"
-              text="Nuestra reserva cuenta con un ecosistema de bosque seco tropical, corredor biológico de la fauna por estar al margen del río Opia. Sabías que el bosque seco tropical es uno de los ecosistemas más amenazados  del mundo, en Colombia. Solo queda el 8 % de los 9 millones de hectáreas que originalmente cubría"
-              link="/reserva"
-              nameLink="Conoce más"
-            />
-          </div>
-          <div class="text-center">
-            <Card
-              icon="volunteer.svg"
-              icon_name="voluntariado"
-              title="Apoyo a la reserva"
-              text="Únete a la aventura de ser parte de la conservación de nuestro planeta y forma parte de la comunidad de voluntarios o padrinos en la reserva. Tu colaboración es fundamental para preservar la biodiversidad y garantizar un futuro sostenible para las próximas generaciones."
-              link="/contactanos"
-              nameLink="Hazte voluntario o padrino !"
-            />
-          </div>
-          <div class="text-center">
-            <Card
-              icon="galeria.svg"
-              icon_name="galeria"
-              title="Galería de fotos"
-              text="La reserva tiene una fauna y flora única y sorprendente. Conecta con la emocionante historia de un pueblo valiente y aguerrido y déjate maravillar por los impresionantes paisajes naturales llenos de sorpresas."
-              link="/galeria"
-              nameLink="Ver la galería !"
-            />
-          </div>
+        <div class="text-center">
+          <Card
+            icon="volunteer.svg"
+            icon_name="voluntariado"
+            title="Apoyo a la reserva"
+            text="Únete a la aventura de ser parte de la conservación de nuestro planeta y forma parte de la comunidad de voluntarios o padrinos en la reserva. Tu colaboración es fundamental para preservar la biodiversidad y garantizar un futuro sostenible para las próximas generaciones."
+            link="/contactanos"
+            nameLink="Hazte voluntario o padrino !"
+          />
         </div>
         <div class="text-center">
-          <CardContacto
-            icon="contactanos.svg"
-            icon_name="contactanos"
-            title="Contáctanos"
-            text="La reserva se encuentra a 20 minutos de la ciudad de Ibagué, en el departamento del Tolima, Colombia"
-            url_maps="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.919315965023!2d-74.98013618552636!3d4.4261321452102464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38cdb01f199d5b%3A0x9a7b95a195fa8778!2sReserva%20Natural%20La%20Esmeralda%20Doima!5e0!3m2!1ses-419!2sco!4v1675908202324!5m2!1ses-419!2sco"
-            link="/contactanos"
-            nameLink="Comunicate con nosotros !"
+          <Card
+            icon="galeria.svg"
+            icon_name="galeria"
+            title="Galería de fotos"
+            text="La reserva tiene una fauna y flora única y sorprendente. Conecta con la emocionante historia de un pueblo valiente y aguerrido y déjate maravillar por los impresionantes paisajes naturales llenos de sorpresas."
+            link="/galeria"
+            nameLink="Ver la galería !"
           />
         </div>
       </div>
+      <div class="text-center">
+        <CardContacto
+          icon="contactanos.svg"
+          icon_name="contactanos"
+          title="Contáctanos"
+          text="La reserva se encuentra a 20 minutos de la ciudad de Ibagué, en el departamento del Tolima, Colombia"
+          url_maps="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.919315965023!2d-74.98013618552636!3d4.4261321452102464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38cdb01f199d5b%3A0x9a7b95a195fa8778!2sReserva%20Natural%20La%20Esmeralda%20Doima!5e0!3m2!1ses-419!2sco!4v1675908202324!5m2!1ses-419!2sco"
+          link="/contactanos"
+          nameLink="Comunicate con nosotros !"
+        />
+      </div>
     </div>
-    <div class="container m-auto pb-28">
-      <Title2Inicio text1="Algunas" text2="experiencias compartídas" />
+  </div>
+
+  <div class="bg-[#2c8936] pb-28 text-center">
+    <div style="overflow: hidden;">
+      <svg
+        preserveAspectRatio="none"
+        viewBox="0 0 1200 120"
+        xmlns="http://www.w3.org/2000/svg"
+        style={{
+          fill: "#ffffff",
+          width: "100%",
+          height: 70,
+          transform: "scaleX(-1)",
+        }}
+      >
+        <path
+          d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+          opacity=".25"></path>
+        <path
+          d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+          opacity=".5"></path>
+        <path
+          d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z"
+        ></path>
+      </svg>
+    </div>
+    <div class="container m-auto">
+      <h2
+        class="font-bold text-white text-4xl md:text-5xl leading-tight m-3 drop-shadow-xl shadow-black"
+      >
+        Algunas experiencias compartídas
+      </h2>
       <div>
-        <div class="space-y-10">
+        <div class="space-y-4 mx-3 md:mx-0">
           <CardOpinion
             nombreVisitante="Salvador Zinatelli"
             profesionVisitante="Consultor migratorio / Educativo – Yolochoice"
@@ -161,103 +216,164 @@ import CardContacto from "../components/CardContacto.astro";
         </div>
       </div>
     </div>
-    <div class="container m-auto">
-      <Title2Inicio text1="Algúnos de" text2="nuestros aliados" />
+  </div>
+  <div style="overflow: hidden;">
+    <svg
+      preserveAspectRatio="none"
+      viewBox="0 0 1200 120"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ fill: "#2c8936", width: "131%", height: 57 }}
+    >
+      <path
+        d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+        opacity=".25"></path>
+      <path
+        d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+        opacity=".5"></path>
+      <path
+        d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z"
+      ></path>
+    </svg>
+  </div>
 
-      <section>
-        <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-          <h2
-            class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-white"
+  <div class="container m-auto text-center">
+    <!-- <Title2Inicio text1="Algúnos de nuestros aliados" #4db1e5 /> -->
+    <h2
+      class="font-bold text-[#2c8936] text-4xl md:text-5xl leading-tight m-3 drop-shadow-xl shadow-black"
+    >
+      Algúnos de nuestros aliados
+    </h2>
+
+    <section>
+      <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+        <h2
+          class="mb-8 lg:mb-16 text-2xl font-extrabold tracking-tight leading-tight text-center text-[#4db1e5;]"
+        >
+          Gracias por estar vinculados a esta aventura
+        </h2>
+        <div
+          class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6"
+        >
+          <a
+            target="_blank"
+            href="https://conservatoriodeltolima.edu.co/"
+            class="flex justify-center items-center"
           >
-            Gracias por estar vinculados a esta aventura
-          </h2>
-          <div
-            class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6"
+            <img
+              loading="lazy"
+              src="/logos/conservatorio.avif"
+              alt="conservatorio"
+            />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.unibague.edu.co/"
+            class="flex justify-center items-center"
           >
-            <a
-              target="_blank"
-              href="https://conservatoriodeltolima.edu.co/"
-              class="flex justify-center items-center"
-            >
-              <img
-                loading="lazy"
-                src="/logos/conservatorio.avif"
-                alt="conservatorio"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.unibague.edu.co/"
-              class="flex justify-center items-center"
-            >
-              <img loading="lazy" src="/logos/unibague.avif" alt="unibague" />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.facebook.com/Aprocade/"
-              class="flex justify-center items-center"
-            >
-              <img loading="lazy" src="/logos/aprocade.avif" alt="aprocade" />
-            </a>
-            <a
-              target="_blank"
-              href="https://doima.colegiosonline.com/"
-              class="flex justify-center items-center"
-            >
-              <img loading="lazy" src="/logos/iedudoima.avif" alt="iedudoima" />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.parquesnacionales.gov.co/portal/es/"
-              class="flex justify-center it ems-center"
-            >
-              <img
-                loading="lazy"
-                src="/logos/parques-naturales.avif"
-                alt="parques-naturales"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.cortolima.gov.co/"
-              class="flex justify-center items-center"
-            >
-              <img loading="lazy" src="/logos/cortolima.avif" alt="cortolima" />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.facebook.com/people/Gesti%C3%B3n-ambiental-piedras/100080306673404/?paipv=0&eav=AfYbQ_BR6xarkFGISfr9i0BZROA9aKij866xz6nmNzdDgJzBSpAgnqQzwdZjtsE9nBc&_rdr"
-              class="flex justify-center items-center"
-            >
-              <img loading="lazy" src="/logos/gap.avif" alt="gap" />
-            </a>
-            <a target="_blank" href="https://www.policia.gov.co/">
-              <img loading="lazy" src="/logos/policia.avif" alt="policia" />
-            </a>
-            <a
-              target="_blank"
-              href="https://empresite.eleconomistaamerica.co/FUNDACION-AMBIENTAL-OASIS-VIDA-ONG.html"
-            >
-              <img loading="lazy" src="/logos/faov.avif" alt="policia" />
-            </a>
-            <a
-              target="_blank"
-              href="https://organizacionfemeninapopular.blogspot.com/p/inicio.html"
-            >
-              <img loading="lazy" src="/logos/ofp.avif" alt="policia" />
-            </a>
-            <a
-              target="_blank"
-              href="https://organizacionfemeninapopular.blogspot.com/p/inicio.html"
-            >
-              <img loading="lazy" src="/logos/comunera.avif" alt="policia" />
-            </a>
-          </div>
+            <img loading="lazy" src="/logos/unibague.avif" alt="unibague" />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/Aprocade/"
+            class="flex justify-center items-center"
+          >
+            <img loading="lazy" src="/logos/aprocade.avif" alt="aprocade" />
+          </a>
+          <a
+            target="_blank"
+            href="https://doima.colegiosonline.com/"
+            class="flex justify-center items-center"
+          >
+            <img loading="lazy" src="/logos/iedudoima.avif" alt="iedudoima" />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.parquesnacionales.gov.co/portal/es/"
+            class="flex justify-center it ems-center"
+          >
+            <img
+              loading="lazy"
+              src="/logos/parques-naturales.avif"
+              alt="parques-naturales"
+            />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.cortolima.gov.co/"
+            class="flex justify-center items-center"
+          >
+            <img loading="lazy" src="/logos/cortolima.avif" alt="cortolima" />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/people/Gesti%C3%B3n-ambiental-piedras/100080306673404/?paipv=0&eav=AfYbQ_BR6xarkFGISfr9i0BZROA9aKij866xz6nmNzdDgJzBSpAgnqQzwdZjtsE9nBc&_rdr"
+            class="flex justify-center items-center"
+          >
+            <img loading="lazy" src="/logos/gap.avif" alt="gap" />
+          </a>
+          <a target="_blank" href="https://www.policia.gov.co/">
+            <img loading="lazy" src="/logos/policia.avif" alt="policia" />
+          </a>
+          <a
+            target="_blank"
+            href="https://empresite.eleconomistaamerica.co/FUNDACION-AMBIENTAL-OASIS-VIDA-ONG.html"
+          >
+            <img loading="lazy" src="/logos/faov.avif" alt="policia" />
+          </a>
+          <a
+            target="_blank"
+            href="https://organizacionfemeninapopular.blogspot.com/p/inicio.html"
+          >
+            <img loading="lazy" src="/logos/ofp.avif" alt="policia" />
+          </a>
+          <a
+            target="_blank"
+            href="https://organizacionfemeninapopular.blogspot.com/p/inicio.html"
+          >
+            <img loading="lazy" src="/logos/comunera.avif" alt="policia" />
+          </a>
         </div>
-      </section>
+      </div>
+    </section>
+    <div style="overflow: hidden;">
+      <svg
+        preserveAspectRatio="none"
+        viewBox="0 0 1200 120"
+        xmlns="http://www.w3.org/2000/svg"
+        style={{ fill: '#fff', width: '400%', height: 57, }}
+      >
+        <path
+        d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+        opacity=".25"
+      />
+        <path
+          d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+          opacity=".5"
+        />
+        <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
+      </svg>
     </div>
-    <div class="container m-auto pt-28">
-      <Visitas client:load />
+  </div>
+
+  <div class="container m-auto bg-[url('/fondos/fondo5-2.avif')] bg-cover">
+    <div style="overflow: hidden;">
+      <svg
+        preserveAspectRatio="none"
+        viewBox="0 0 1200 120"
+        xmlns="http://www.w3.org/2000/svg"
+        style={{ fill: '#fff', width: '400%', height: 57, }}
+      >
+        <path
+        d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+        opacity=".25"
+      />
+        <path
+          d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+          opacity=".5"
+        />
+        <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
+      </svg>
     </div>
+    <Visitas client:load />
   </div>
 </Layout>
