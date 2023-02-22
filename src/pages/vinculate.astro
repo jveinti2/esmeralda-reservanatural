@@ -224,7 +224,6 @@ import CardServiciosL from "../components/CardServiciosL.astro";
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </section>
@@ -239,6 +238,11 @@ import CardServiciosL from "../components/CardServiciosL.astro";
             >
               Aventura virtual.
             </h2>
+            <img
+              class="w-full rounded-lg md:hidden"
+              src="/apoyanos/recorrido.png"
+              alt="dashboard image"
+            />
             <p class="mb-6 font-light text-gray-500 md:text-lg">
               Nuestro recorrido virtual les permitirá explorar los rincones más
               escondidos de la reserva, aprender sobre su fauna y flora y
@@ -290,7 +294,7 @@ import CardServiciosL from "../components/CardServiciosL.astro";
             </a>
           </div>
           <img
-            class="w-full rounded-lg"
+            class="w-full rounded-lg hidden md:block"
             src="/apoyanos/recorrido.png"
             alt="dashboard image"
           />
@@ -323,26 +327,26 @@ import CardServiciosL from "../components/CardServiciosL.astro";
               recibirán información periódica sobre nuestras actividades y los
               avances en nuestro trabajo de conservación.
               <a
-                  class="font-bold flex items-center gap-1"
-                  href="/vinculate-como/donante"
-                  >Más acerca ser donante <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-box-arrow-up-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
-                    ></path>
-                    <path
-                      fill-rule="evenodd"
-                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
-                    ></path>
-                  </svg></a
+                class="font-bold flex items-center gap-1"
+                href="/vinculate-como/donante"
+                >Más acerca ser donante <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-box-arrow-up-right"
+                  viewBox="0 0 16 16"
                 >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+                  ></path>
+                </svg></a
+              >
             </p>
             <a
               href="#"
