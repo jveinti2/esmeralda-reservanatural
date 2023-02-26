@@ -2,17 +2,23 @@
 const { title, text, link, nameLink, icon, icon_name } = Astro.props;
 ---
 
-<div class="h-full p-6 bg-white border border-gray-200 rounded-lg shadow-md">
+<div
+  class="h-full mx-3 md:mx-0 p-4 bg-white border border-gray-200 rounded-lg shadow-md"
+>
   <img class="w-10 m-auto" src={icon} alt={icon_name} />
 
   <h5 class="mb-2 text-2xl font-semibold tracking-tight">
     {title}
   </h5>
 
-  <p class="mb-3 font-normal text-gray-500">
+  <p class="mb-3 font-light text-gray-500">
     {text}
   </p>
-  <a href="#" class="py-1 px-3 rounded-2xl inline-flex items-center text-white bg-lime-500 shadow-md ">
+  <a
+    style="background-color: #2c8936;"
+    href="#"
+    class="py-1 px-3 rounded-2xl inline-flex items-center text-white bg-lime-500 shadow-md"
+  >
     {nameLink}
     <svg
       class="w-5 h-5 ml-2"

@@ -10,9 +10,9 @@ import ButtonHeader from "../components/ButtonHeader.astro";
     id="authentication-modal"
     tabindex="-1"
     aria-hidden="true"
-    class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full"
+    class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto d:inset-0 h-modal d:h-full"
   >
-    <div class="relative w-full h-full max-w-md md:h-auto">
+    <div class="relative w-full h-full max-w-d d:h-auto">
       <!-- Modal content -->
       <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
         <button
@@ -114,9 +114,9 @@ import ButtonHeader from "../components/ButtonHeader.astro";
     id="register-modal"
     tabindex="-1"
     aria-hidden="true"
-    class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full"
+    class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto d:inset-0 h-modal d:h-full"
   >
-    <div class="relative w-full h-full max-w-md md:h-auto">
+    <div class="relative w-full h-full max-w-d d:h-auto">
       <!-- Modal content -->
       <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
         <button
@@ -212,16 +212,15 @@ import ButtonHeader from "../components/ButtonHeader.astro";
       </div>
     </div>
   </div>
+  <!--  -->
   <div class="mx-auto max-w-7xl px-6">
     <div
-      class="flex items-center justify-between border-b-2 border-gray-100 py-2 md:justify-start md:space-x-10"
+      class="flex items-center justify-between border-b-2 border-gray-100 py-2 lg:justify-start lg:space-x-10"
     >
       <div class="flex justify-start lg:w-0 lg:flex-1">
         <a href="/">
-          <span class="sr-only">Your Company</span>
-
           <img
-            class="w-auto h-16 sm:h-24 lg:w-auto lg:h-20 xl:h-24 2xl:h-28"
+            class="w-auto h-10 lg:w-auto lg:h-20 xl:h-24 2xl:h-28 "
             src="/logo-sin-bg.png"
             alt="logo"
           />
@@ -230,7 +229,7 @@ import ButtonHeader from "../components/ButtonHeader.astro";
       <div>
         <section x-data="{ isOpen: false }">
           <div class="flex items-center justify-between">
-            <button x-cloak @click="isOpen = !isOpen" class="md:hidden">
+            <button x-cloak @click="isOpen = !isOpen" class="lg:hidden">
               <span x-show="isOpen">
                 <svg
                   class="w-6 h-6 fill-gray-800"
@@ -259,16 +258,16 @@ import ButtonHeader from "../components/ButtonHeader.astro";
           <div
             x-cloak
             :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
-            class="absolute inset-x-0 z-20 w-full px-6 py-8 mt-8 space-y-6 transition-all duration-300 ease-in-out bg-white top-16 md:bg-transparent md:dark:bg-transparent md:mt-0 md:p-0 md:top-0 md:relative md:w-auto md:opacity-100 md:translate-x-0 md:space-y-0 md:-mx-6 md:flex md:items-center"
+            class="absolute inset-x-0 z-20 w-full px-6 py-8 mt-8 space-y-6 transition-all duration-300 ease-in-out bg-white top-16 lg:bg-transparent lg:dark:bg-transparent lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:space-y-0 lg:-mx-6 lg:flex lg:items-center"
           >
             <div
-              class="flex flex-col items-start justify-center w-full space-y-2 md:flex-row md:space-y-0 md:space-x-2"
+              class="flex flex-col items-start justify-center w-full space-y-2 lg:flex-row lg:space-y-0 lg:space-x-2"
             >
               <div
                 id="authentication-modal"
                 tabindex="-1"
                 aria-hidden="true"
-                class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full"
+                class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto lg:inset-0 h-modal lg:h-full"
               >
               </div>
 
