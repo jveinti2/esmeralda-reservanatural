@@ -7,8 +7,6 @@ import CardCentro from "../components/CardCentro.astro";
 import Visitas from "../components/Visitas.astro";
 import Title2Inicio from "../components/Title2Inicio.astro";
 import CardContacto from "../components/CardContacto.astro";
-
-
 ---
 
 <style>
@@ -20,18 +18,155 @@ import CardContacto from "../components/CardContacto.astro";
 </style>
 
 <Layout title="La Esmeralda Reserva Natural">
-  <div class="h-screen">
-    <div class="bg-[url('/fondos/fondo5-2.avif')] bg-cover">
-      <div class="h-72 p-5 space-y-20">
-        <div class="container m-auto">
-          <Title1 text1="Reserva Natural" text2="La Esmeralda" />
-        </div>
-        <div class="w-3/6">
-          <span class="text-white text-xl">
-            Hogar legendario de las otras de agua dulce.
-          </span>
+  <div class="h-screen mb-10">
+    <div class="h-full">
+      <div class="h-3/5">
+        <div class="bg-[url('/fondos/fondo5-2.avif')] bg-cover lg:bg-center">
+          <div class="mb-36 lg:mb-24 space-y-20 lg:space-y-6 lg:pt-10">
+            <div class="text-center pt-10">
+              <Title1 text1="Reserva Natural" text2="La Esmeralda" />
+            </div>
+            <div class="w-full text-center">
+              <span class="text-white text-2xl md:text-3xl p-2">
+                Hogar legendario de las otras de agua dulce.
+              </span>
+            </div>
+          </div>
+          <div style="overflow: hidden;">
+            <svg
+              preserveAspectRatio="none"
+              viewBox="0 0 1200 120"
+              xmlns="http://www.w3.org/2000/svg"
+              style={{
+                fill: "#ffffff",
+                width: "400%",
+                height: 25,
+                transform: "rotate(180deg)",
+              }}
+            >
+              <path
+                d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+                opacity=".25"></path>
+              <path
+                d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+                opacity=".5"></path>
+              <path
+                d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z"
+              ></path>
+            </svg>
+          </div>
         </div>
       </div>
+      <div class="text-center md:text-lg lg:text-xl space-y-10 p-5">
+        <span>
+          Somos un oasis de naturaleza para la fauna🐍 y la flora🌺.
+          <br />
+          Estamos ubicados en Doima, municipio de Piedras – Tolima, ubicados a la
+          rivera del río Opia.
+        </span>
+        <div class="grid place-items-center">
+          <a
+            style="background-color: #2c8936;"
+            href="#nosotros"
+            id="btn-unete"
+            class="flex items-center space-x-2 text-lg lg:text-2xl px-5 py-1 rounded-2xl text-white transition-all ease-in- duration-75 hover:shadow-lg"
+          >
+            ¡Únete a la reserva! <svg
+              class="ml-1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-down-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="nosotros" class="my-20">
+    <div class="text-center container m-auto ">
+      <Title2Inicio text1="Nuestra reserva" />
+      <div class="space-y-10">
+        <div>
+          <CardCentro
+            icon="acount.svg"
+            icon_name="nosotros"
+            title="Nosotros"
+            text="Hace algún tiempo, dos personas apasionadas por la naturaleza iniciamos el sueño de ser guardianes de una porción de terreno en Doima, Piedras en Tolima, que gradualmente covertimos en un oasis para la fauna y la flora silvestre que transita por el corredor biológico del Río Opia."
+            text2="Hoy, después de 7 años, somos la Reserva Natural de la Sociedad Civil (RNSC) 151-20 La Esmeralda, según la resolución No. 227 del 2 de diciembre de 2022, emitida por el Ministerio del Medio Ambiente a través de Parques Nacionales. ¡Seguimos creyendo que todos podemos pasar de la intención a los hechos!"
+            link="https://www.esmeraldareservanatural.com/recorrido"
+            nameLink="Conoce más"
+          />
+        </div>
+
+        <div
+          class="lg:mx-auto space-y-10 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-2 lg:max-w-5xl md:gap-10"
+        >
+          <div class="text-center">
+            <Card
+              icon="hatExplorer.svg"
+              icon_name="aliado"
+              title="Vincúlate a la reserva"
+              text="Únete a la misión de proteger la biodiversidad desde cualquier parte del mundo! Envía tu solicitud y forma parte de nuestra comunidad de personas comprometidas con la conservación. Estamos emocionados de contar contigo como un aliado valioso en esta importante causa."
+              link="/contactanos"
+              nameLink="Vincúlate !"
+            />
+          </div>
+          <div class="text-center">
+            <Card
+              icon="ecosistema.svg"
+              icon_name="ecosistema"
+              title="Nuestros ecosistemas"
+              text="Nuestra reserva cuenta con un ecosistema de bosque seco tropical, corredor biológico de la fauna por estar al margen del río Opia. Sabías que el bosque seco tropical es uno de los ecosistemas más amenazados  del mundo, en Colombia. Solo queda el 8 % de los 9 millones de hectáreas que originalmente cubría"
+              link="/reserva"
+              nameLink="Conoce más"
+            />
+          </div>
+          <div class="text-center">
+            <Card
+              icon="volunteer.svg"
+              icon_name="voluntariado"
+              title="Apoyo a la reserva"
+              text="Únete a la aventura de ser parte de la conservación de nuestro planeta y forma parte de la comunidad de voluntarios o padrinos en la reserva. Tu colaboración es fundamental para preservar la biodiversidad y garantizar un futuro sostenible para las próximas generaciones."
+              link="/contactanos"
+              nameLink="Hazte voluntario o padrino !"
+            />
+          </div>
+          <div class="text-center">
+            <Card
+              icon="galeria.svg"
+              icon_name="galeria"
+              title="Galería de fotos"
+              text="La reserva tiene una fauna y flora única y sorprendente. Conecta con la emocionante historia de un pueblo valiente y aguerrido y déjate maravillar por los impresionantes paisajes naturales llenos de sorpresas."
+              link="/galeria"
+              nameLink="Ver la galería !"
+            />
+          </div>
+        </div>
+        <div class="text-center">
+          <CardContacto
+            icon="contactanos.svg"
+            icon_name="contactanos"
+            title="Contáctanos"
+            text="La reserva se encuentra a 20 minutos de la ciudad de Ibagué, en el departamento del Tolima, Colombia"
+            url_maps="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.919315965023!2d-74.98013618552636!3d4.4261321452102464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38cdb01f199d5b%3A0x9a7b95a195fa8778!2sReserva%20Natural%20La%20Esmeralda%20Doima!5e0!3m2!1ses-419!2sco!4v1675908202324!5m2!1ses-419!2sco"
+            link="/contactanos"
+            nameLink="Comunicate con nosotros !"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <div class="bg-[#2c8936] text-center">
       <div style="overflow: hidden;">
         <svg
           preserveAspectRatio="none"
@@ -39,9 +174,9 @@ import CardContacto from "../components/CardContacto.astro";
           xmlns="http://www.w3.org/2000/svg"
           style={{
             fill: "#ffffff",
-            width: "125%",
-            height: 75,
-            transform: "rotate(180deg)",
+            width: "400%",
+            height: 25,
+            transform: "scaleX(-1)",
           }}
         >
           <path
@@ -55,122 +190,50 @@ import CardContacto from "../components/CardContacto.astro";
           ></path>
         </svg>
       </div>
-    </div>
-    <div class="text-center space-y-10 p-5">
-      <span>
-        Somos un oasis de naturaleza para la fauna🐍 y la flora🌺.
-        <br />
-        Estamos en Doima, municipio de Piedras – Tolima, ubicados a la rivera del
-        río Opia.
-      </span>
-      <div class="grid place-items-center">
-        <a
-          style="background-color: #2c8936;"
-          href="#nosotros"
-          id="btn-unete"
-          class="flex items-center space-x-2 text-lg md:text-2xl px-5 py-1 rounded-2xl text-white transition-all ease-in- duration-75 hover:shadow-lg"
-        >
-          ¡Únete a la reserva! <svg
-            class="ml-1"
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-arrow-down-circle-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"
-            ></path>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div id="nosotros">
-    <div class="text-center container m-auto">
-      <Title2Inicio text1="Nuestra reserva" />
-      <CardCentro
-        icon="acount.svg"
-        icon_name="nosotros"
-        title="Nosotros"
-        text="Hace algún tiempo, dos personas apasionadas por la naturaleza iniciamos el sueño de ser guardianes de una porción de terreno en Doima, Piedras en Tolima, que gradualmente covertimos en un oasis para la fauna y la flora silvestre que transita por el corredor biológico del Río Opia."
-        text2="Hoy, después de 7 años, somos la Reserva Natural de la Sociedad Civil (RNSC) 151-20 La Esmeralda, según la resolución No. 227 del 2 de diciembre de 2022, emitida por el Ministerio del Medio Ambiente a través de Parques Nacionales. ¡Seguimos creyendo que todos podemos pasar de la intención a los hechos!"
-        link="https://www.esmeraldareservanatural.com/recorrido"
-        nameLink="Conoce más"
-      />
-
-      <div
-        class="lg:mx-auto space-y-10 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-2 lg:max-w-5xl md:gap-10"
-      >
-        <div class="text-center">
-          <Card
-            icon="hatExplorer.svg"
-            icon_name="aliado"
-            title="Vincúlate a la reserva"
-            text="Únete a la misión de proteger la biodiversidad desde cualquier parte del mundo! Envía tu solicitud y forma parte de nuestra comunidad de personas comprometidas con la conservación. Estamos emocionados de contar contigo como un aliado valioso en esta importante causa."
-            link="/contactanos"
-            nameLink="Vincúlate !"
-          />
-        </div>
-        <div class="text-center">
-          <Card
-            icon="ecosistema.svg"
-            icon_name="ecosistema"
-            title="Nuestros ecosistemas"
-            text="Nuestra reserva cuenta con un ecosistema de bosque seco tropical, corredor biológico de la fauna por estar al margen del río Opia. Sabías que el bosque seco tropical es uno de los ecosistemas más amenazados  del mundo, en Colombia. Solo queda el 8 % de los 9 millones de hectáreas que originalmente cubría"
-            link="/reserva"
-            nameLink="Conoce más"
-          />
-        </div>
-        <div class="text-center">
-          <Card
-            icon="volunteer.svg"
-            icon_name="voluntariado"
-            title="Apoyo a la reserva"
-            text="Únete a la aventura de ser parte de la conservación de nuestro planeta y forma parte de la comunidad de voluntarios o padrinos en la reserva. Tu colaboración es fundamental para preservar la biodiversidad y garantizar un futuro sostenible para las próximas generaciones."
-            link="/contactanos"
-            nameLink="Hazte voluntario o padrino !"
-          />
-        </div>
-        <div class="text-center">
-          <Card
-            icon="galeria.svg"
-            icon_name="galeria"
-            title="Galería de fotos"
-            text="La reserva tiene una fauna y flora única y sorprendente. Conecta con la emocionante historia de un pueblo valiente y aguerrido y déjate maravillar por los impresionantes paisajes naturales llenos de sorpresas."
-            link="/galeria"
-            nameLink="Ver la galería !"
-          />
+      <div class="py-20">
+        <div class="container m-auto">
+          <div class="pb-14">
+            <div class="space-y-10 mx-3">
+              <h2
+                class="font-bold text-white text-4xl md:text-5xl leading-tight m-3 drop-shadow-xl shadow-black"
+              >
+                Algunas experiencias compartídas
+              </h2>
+              <CardOpinion
+                nombreVisitante="Salvador Zinatelli"
+                profesionVisitante="Consultor migratorio / Educativo – Yolochoice"
+                opinion="Vivo en Vancouver Canadá fui a Colombia, conocí parte de sus territorios y fue muy agradable encontrar una reserva natural tan cerca de Ibagué y que realmente tiene una belleza única como son las ostras de agua dulce y un ecosistema privilegiado, Tuve la oportunidad de practicar de un pequeño retiro y clases de Yoga, un lugar excelente para descansar y renovarse. Recomiendo mucho la visita y estadía de La reserva natural Esmeralda."
+                imagenVisitante="https://www.esmeraldareservanatural.com/images/salvador.png"
+              />
+              <CardOpinion
+                nombreVisitante="Sybila Guerra"
+                profesionVisitante="Psicologa / Emprendedora - Seryoga"
+                opinion="Yo ya fui y viste la reserva es un lugar mágico, la experiencia fue maravillosa, lo que más me conecto son sus expírales llenos de energía renovadora, desde mi experiencia profesional también puedo opinar que el sitio es espectacular para la conexión interior, recomiendo mucho visitarlo."
+                imagenVisitante="https://www.esmeraldareservanatural.com/images/Sybila.png"
+              />
+              <CardOpinion
+                nombreVisitante="Cecilia Leal"
+                profesionVisitante="Ing. Forestal / Fundacion Ambiental Oasis de Vida"
+                opinion="Conocer y recorrer la Reserva Natural, es una gran experiencia, en la que se puede tener contacto directo con la naturaleza, esta a solo 40 minutos de Ibagué, por una vía pavimentada. Este pequeño paraíso enclavado en el bosque seco es orgullo para la región y para sus propietarios, que son ejemplo de compromiso en protección y conservación, de un importante, singular y frágil ecosistema, como lo es el ecosistema seco, prioridad de conservación a nivel mundial."
+                imagenVisitante="https://www.esmeraldareservanatural.com/images/cecilia.png"
+              />
+              <CardOpinion
+                nombreVisitante="Milton Artunduaga"
+                profesionVisitante="Psicologa / Emprendedora - Seryoga"
+                opinion="La tierra tiene música para que la escuchen, los arboles cantan con el viento mientras las aves bailan entre si, las flores sonríen al ser tocadas delicadamente, los caminos guardan las historias de los caminantes que los recorren, las quebradas entonan sus mejores melodías junto con las rocas que las protegen. En la Reserva Natural la Esmeralda puedes escuchar esta sinfonía una y otra vez, al cerrar los ojos o al mirar con detalle la mariposa que baila entre sus coloridos matices."
+                imagenVisitante="https://www.esmeraldareservanatural.com/images/milton.png"
+              />
+            </div>
+          </div>
         </div>
       </div>
-      <div class="text-center">
-        <CardContacto
-          icon="contactanos.svg"
-          icon_name="contactanos"
-          title="Contáctanos"
-          text="La reserva se encuentra a 20 minutos de la ciudad de Ibagué, en el departamento del Tolima, Colombia"
-          url_maps="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.919315965023!2d-74.98013618552636!3d4.4261321452102464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38cdb01f199d5b%3A0x9a7b95a195fa8778!2sReserva%20Natural%20La%20Esmeralda%20Doima!5e0!3m2!1ses-419!2sco!4v1675908202324!5m2!1ses-419!2sco"
-          link="/contactanos"
-          nameLink="Comunicate con nosotros !"
-        />
-      </div>
     </div>
-  </div>
-
-  <div class="bg-[#2c8936] pb-28 text-center">
     <div style="overflow: hidden;">
       <svg
         preserveAspectRatio="none"
         viewBox="0 0 1200 120"
         xmlns="http://www.w3.org/2000/svg"
-        style={{
-          fill: "#ffffff",
-          width: "100%",
-          height: 70,
-          transform: "scaleX(-1)",
-        }}
+        style={{ fill: "#2c8936", width: "400%", height: 25 }}
       >
         <path
           d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
@@ -183,63 +246,9 @@ import CardContacto from "../components/CardContacto.astro";
         ></path>
       </svg>
     </div>
-    <div class="container m-auto">
-      <h2
-        class="font-bold text-white text-4xl md:text-5xl leading-tight m-3 drop-shadow-xl shadow-black"
-      >
-        Algunas experiencias compartídas
-      </h2>
-      <div>
-        <div class="space-y-4 mx-3 md:mx-0">
-          <CardOpinion
-            nombreVisitante="Salvador Zinatelli"
-            profesionVisitante="Consultor migratorio / Educativo – Yolochoice"
-            opinion="Vivo en Vancouver Canadá fui a Colombia, conocí parte de sus territorios y fue muy agradable encontrar una reserva natural tan cerca de Ibagué y que realmente tiene una belleza única como son las ostras de agua dulce y un ecosistema privilegiado, Tuve la oportunidad de practicar de un pequeño retiro y clases de Yoga, un lugar excelente para descansar y renovarse. Recomiendo mucho la visita y estadía de La reserva natural Esmeralda."
-            imagenVisitante="https://www.esmeraldareservanatural.com/images/salvador.png"
-          />
-          <CardOpinion
-            nombreVisitante="Sybila Guerra"
-            profesionVisitante="Psicologa / Emprendedora - Seryoga"
-            opinion="Yo ya fui y viste la reserva es un lugar mágico, la experiencia fue maravillosa, lo que más me conecto son sus expírales llenos de energía renovadora, desde mi experiencia profesional también puedo opinar que el sitio es espectacular para la conexión interior, recomiendo mucho visitarlo."
-            imagenVisitante="https://www.esmeraldareservanatural.com/images/Sybila.png"
-          />
-          <CardOpinion
-            nombreVisitante="Cecilia Leal"
-            profesionVisitante="Ing. Forestal / Fundacion Ambiental Oasis de Vida"
-            opinion="Conocer y recorrer la Reserva Natural, es una gran experiencia, en la que se puede tener contacto directo con la naturaleza, esta a solo 40 minutos de Ibagué, por una vía pavimentada. Este pequeño paraíso enclavado en el bosque seco es orgullo para la región y para sus propietarios, que son ejemplo de compromiso en protección y conservación, de un importante, singular y frágil ecosistema, como lo es el ecosistema seco, prioridad de conservación a nivel mundial."
-            imagenVisitante="https://www.esmeraldareservanatural.com/images/cecilia.png"
-          />
-          <CardOpinion
-            nombreVisitante="Milton Artunduaga"
-            profesionVisitante="Psicologa / Emprendedora - Seryoga"
-            opinion="La tierra tiene música para que la escuchen, los arboles cantan con el viento mientras las aves bailan entre si, las flores sonríen al ser tocadas delicadamente, los caminos guardan las historias de los caminantes que los recorren, las quebradas entonan sus mejores melodías junto con las rocas que las protegen. En la Reserva Natural la Esmeralda puedes escuchar esta sinfonía una y otra vez, al cerrar los ojos o al mirar con detalle la mariposa que baila entre sus coloridos matices."
-            imagenVisitante="https://www.esmeraldareservanatural.com/images/milton.png"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-  <div style="overflow: hidden;">
-    <svg
-      preserveAspectRatio="none"
-      viewBox="0 0 1200 120"
-      xmlns="http://www.w3.org/2000/svg"
-      style={{ fill: "#2c8936", width: "131%", height: 57 }}
-    >
-      <path
-        d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
-        opacity=".25"></path>
-      <path
-        d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
-        opacity=".5"></path>
-      <path
-        d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z"
-      ></path>
-    </svg>
   </div>
 
-  <div class="container m-auto text-center">
-    <!-- <Title2Inicio text1="Algúnos de nuestros aliados" #4db1e5 /> -->
+  <div class="container m-auto text-center my-20">
     <h2
       class="font-bold text-[#2c8936] text-4xl md:text-5xl leading-tight m-3 drop-shadow-xl shadow-black"
     >
@@ -337,45 +346,28 @@ import CardContacto from "../components/CardContacto.astro";
         </div>
       </div>
     </section>
-    <div style="overflow: hidden;">
-      <svg
-        preserveAspectRatio="none"
-        viewBox="0 0 1200 120"
-        xmlns="http://www.w3.org/2000/svg"
-        style={{ fill: '#fff', width: '400%', height: 57, }}
-      >
-        <path
-        d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
-        opacity=".25"
-      />
-        <path
-          d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
-          opacity=".5"
-        />
-        <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
-      </svg>
-    </div>
   </div>
 
-  <div class="container m-auto bg-[url('/fondos/fondo5-2.avif')] bg-cover">
+  <div class="bg-[url('/fondos/fondo5-2.avif')] bg-cover bg-center ">
     <div style="overflow: hidden;">
       <svg
         preserveAspectRatio="none"
         viewBox="0 0 1200 120"
         xmlns="http://www.w3.org/2000/svg"
-        style={{ fill: '#fff', width: '400%', height: 57, }}
+        style={{ fill: "#fff", width: "400%", height: 25 }}
       >
         <path
-        d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
-        opacity=".25"
-      />
+          d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+          opacity=".25"></path>
         <path
           d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
-          opacity=".5"
-        />
-        <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
+          opacity=".5"></path>
+        <path
+          d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z"
+        ></path>
       </svg>
     </div>
     <Visitas client:load />
   </div>
+
 </Layout>
