@@ -1,8 +1,11 @@
 ---
-const { title, text, text2, link, nameLink, icon, icon_name, url_maps } = Astro.props;
+const { title, text, text2, link, nameLink, icon, icon_name, url_maps } =
+  Astro.props;
 ---
 
-<div class="mx-3 md:mx-0 p-7 bg-white border border-gray-200 rounded-lg shadow-md">
+<div
+  class="mx-3 md:mx-0 p-7 bg-white border border-gray-200 rounded-lg shadow-md"
+>
   <img class="w-10 m-auto" src={icon} alt={icon_name} />
 
   <h5 class="mb-2 text-2xl font-semibold tracking-tight">
@@ -14,6 +17,31 @@ const { title, text, text2, link, nameLink, icon, icon_name, url_maps } = Astro.
     <br />
     {text2}
   </p>
-    <iframe class="container m-auto rounded-lg w-full md:h-96" src={url_maps} style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  
+  <div class="my-2">
+    <iframe
+      class="container m-auto rounded-lg w-full md:h-96"
+      src={url_maps}
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <a
+    style="background-color: #2c8936;"
+    href="/contactanos"
+    class="m-1 py-1 px-3 rounded-2xl inline-flex items-center text-white shadow-md"
+  >
+    Completa el formulario para vincularte a la reserva
+    <svg
+      class="w-5 h-5 ml-2"
+      fill="currentColor"
+      viewBox="0 0 20 20"
+      xmlns="http://www.w3.org/2000/svg"
+      ><path
+        d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"
+      ></path><path
+        d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"
+      ></path></svg
+    >
+  </a>
 </div>

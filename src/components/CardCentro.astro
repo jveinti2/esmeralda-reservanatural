@@ -1,5 +1,5 @@
 ---
-const { title, text, text2, link, nameLink, icon, icon_name } = Astro.props;
+const { title, text, text2, text3, link, nameLink, icon, icon_name } = Astro.props;
 ---
 
 <div class="mx-3 md:mx-0 p-7 bg-white border border-gray-200 rounded-lg shadow-md">
@@ -13,6 +13,8 @@ const { title, text, text2, link, nameLink, icon, icon_name } = Astro.props;
     {text}
     <br />
     {text2}
+    <br />
+    {text3}
   </p>
   <div>
     <a
@@ -20,7 +22,7 @@ const { title, text, text2, link, nameLink, icon, icon_name } = Astro.props;
       href="https://www.esmeraldareservanatural.com/recorrido"
       class="m-1 py-1 px-3 rounded-2xl inline-flex items-center text-white bg-lime-500 shadow-md"
     >
-      ¡Visítanos ahora! Haz un recorrido virtual aquí
+      ¡Visítanos ahora! <br> recorrido virtual aquí
       <svg
         class="w-5 h-5 ml-2"
         version="1.1"
@@ -49,7 +51,7 @@ const { title, text, text2, link, nameLink, icon, icon_name } = Astro.props;
       </svg>
     </a>
 
-    <a
+    <!-- <a
       style="background-color: #2c8936;"
       href="/contactanos"
       class="m-1 py-1 px-3 rounded-2xl inline-flex items-center text-white shadow-md"
@@ -66,6 +68,6 @@ const { title, text, text2, link, nameLink, icon, icon_name } = Astro.props;
           d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"
         ></path></svg
       >
-    </a>
+    </a> -->
   </div>
 </div>
