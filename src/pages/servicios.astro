@@ -4,7 +4,7 @@ import Title11 from "../components/Title11.astro";
 import CardServiciosL from "../components/CardServiciosL.astro";
 import CardServiciosR from "../components/CardServiciosR.astro";
 import Title2 from "../components/Title2.astro";
-
+import CaruselL from "../components/CaruselL.astro";
 ---
 
 <Layout title="La Esmeralda Reserva Natural | Servicios">
@@ -15,25 +15,34 @@ import Title2 from "../components/Title2.astro";
       <Title11 text1="Un día" text2="En la reserva" />
     </div>
   </div>
-  <div class="container m-auto space-y-10 mb-10">
+  <div class="container m-auto space-y-10 mb-10 pt-20">
+    <div class="container m-auto text-center">
+      <p
+        class="mb-8 text-lg font-normal text-gray-900 lg:text-xl sm:px-16 xl:px-48"
+      >
+        “Hoy puede ser un gran día, plantéatelo así. Aprovecharlo o que pase de
+        largo depende, en parte, de ti. Dale el día libre a la experiencia, para
+        comenzar, y recíbelo como si fuera fiesta de guardar. No consientas que
+        se esfume, asómate y consume la vida a granel. Hoy puede ser un gran
+        día: duro con él” (Joan Manuel Serrat)
+      </p>
+    </div>
+    <!-- Secciones -->
+    <!-- Sección inmersion -->
     <section class="bg-white">
       <div
         class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
       >
-        <img
-          class="w-full rounded-lg"
-          src="https://www.ecoticias.com/wp-content/uploads/2022/01/XOUM_os_tcm7-341311_noticia.jpg"
-          alt="dashboard image"
-        />
+        <CaruselL />
 
         <div class="mt-4 md:mt-0">
-          <h2
-            class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900"
-          >
-            Avistamiento del ecosistema
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
+            Inmersión en nuestro ecosistema
           </h2>
           <section class="bg-white">
-            <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+            <div
+              class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6"
+            >
               <figure class="max-w-screen-md mx-auto">
                 <svg
                   class="h-12 mx-auto mb-3 text-gray-400"
@@ -47,18 +56,34 @@ import Title2 from "../components/Title2.astro";
                 </svg>
                 <blockquote>
                   <p class="text-2xl font-medium text-gray-900">
-                   El lente de mi corazón es más potente que el lente de mi cámara.
+                    El lente de tu corazón es más potente que el lente de tu
+                    cámara, déjate sorprender.
                   </p>
                 </blockquote>
-                <figcaption class="flex items-center justify-center mt-6 space-x-3">
-                  
+                <figcaption
+                  class="flex items-center justify-center mt-6 space-x-3"
+                >
                   <div class="flex items-center divide-x-2 divide-gray-500">
-                    <div class="pr-3 font-medium text-gray-900"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
-                      <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
-                      <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
-                    </svg></div>
+                    <div class="pr-3 font-medium text-gray-900">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-camera"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"
+                        ></path>
+                        <path
+                          d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"
+                        ></path>
+                      </svg>
+                    </div>
                     <div class="pl-3 text-sm font-light text-gray-500">
-                      Desde la foto de un celular hasta la camara más costosa la naturaleza siempre muestra su mejor perfil.
+                      Desde la foto de un celular hasta la camara más costosa la
+                      naturaleza siempre muestra su mejor perfil.
                     </div>
                   </div>
                 </figcaption>
@@ -213,33 +238,399 @@ import Title2 from "../components/Title2.astro";
         </div>
       </div>
     </section>
-    <!-- <div class="p-5 rounded-lg transition-all ease-in hover:shadow-lg">
-      <Title2
-        text1="Avistamiento, observación "
-        text2="e investigación del ecosistema"
-      />
-      <CardServiciosL
-        img="/servicios/avistamiento.avif"
-        text1="La reserva está ubicada en el corazón del Tolima, el corregimiento de Doima está surcado por la cordillera central con hermosos paisajes de valles y montañas, bordeado por los ríos Opia y Doima, considerados de gran importancia por ser el hogar de las ostras de agua dulce (Acostea Rivoli). Especie endémica de Colombia. Nuestros ultimos reportes tienen registros del avistamiento de más de 50 especies de fauna, dentro de las aves avistadas tenemos: gorriones, tangaras, atrapa moscas, carpinteros, mirlas, torolitas y palomas. La especie símbolo de nuestra reserva es; barranquero ferina (momotus subrufescens)."
-      />
-    </div>
-    <div class="p-5 rounded-lg transition-all ease-in hover:shadow-lg">
-      <Title2 text1="Coaching natural - " text2="recarga de energía" />
-      <CardServiciosR
-        img="/servicios/couching.avif"
-        text="En la reserva estamos comprometidos con ayudar y ser una verdadera fuente de recarga energética, nuestra terapia de bienestar es personalizada y requiere total voluntad de conectar con la madre tierra a través de la interacción con los 4 elementos.La Madre Tierra será tu guía para ayudarte a comprender las diferentes esferas que componen tu cuerpo energético, desbloqueándolo, equilibrándolo y habilitándolo para que todos los circuitos de energía funcionen debidamente y en armonía, recuperando progresivamente la salud y el bienestar a todos los niveles."
-      />
-    </div> -->
-    <!-- <div class="p-5 rounded-lg transition-all ease-in hover:shadow-lg">
-      <Title2 text1="Canasta del " text2="campo" />
-      <CardServiciosL
-        img="/servicios/recolecta.avif"
-        text1="Sabías que los alimentos de origen natural además de contribuir a tu salud, aportan también al cuidado del medio ambiente. En tiempos donde los productos procesados han invadido la canasta familiar, tú podrías hacer la diferencia, consume alimentos sin pesticidas ni insecticidas."
-        text2="La reserva te ofrece la oportunidad de probar frutas y verduras de cosecha con origen bio- natural."
-        text3="La información de productos ofertados se da vía whatsapp."
-        text4="Servicio disponible únicamente para la ciudad de ibague. Pedido mínimo $20.000 COP."
-        cta="¡Ver los productos! "
-      />
-    </div> -->
+    <!-- Seccion experiencias ansestrales -->
+    <section class="bg-white">
+      <div
+        class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+      >
+        <div class="mt-4 md:mt-0">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
+            Rutinas ancestrales
+          </h2>
+          <img
+            class="w-full rounded-lg md:hidden"
+            src="/apoyanos/recorrido.png"
+            alt="dashboard image"
+          />
+          <section class="bg-white">
+            <div
+              class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6"
+            >
+              <figure class="max-w-screen-md mx-auto">
+                <svg
+                  class="h-12 mx-auto mb-3 text-gray-400"
+                  viewBox="0 0 24 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                    fill="currentColor"></path>
+                </svg>
+                <blockquote>
+                  <p class="text-2xl font-medium text-gray-900">
+                    Si sirves a la naturaleza, ella te servirá a ti <br /> Confucio.
+                  </p>
+                </blockquote>
+                <figcaption
+                  class="flex items-center justify-center mt-6 space-x-3"
+                >
+                  <div class="flex items-center divide-x-2 divide-gray-500">
+                    <div class="pr-3 font-medium text-gray-900">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-camera"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"
+                        ></path>
+                        <path
+                          d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="pl-3 text-sm font-light text-gray-500">
+                      Desde la foto de un celular hasta la camara más costosa la
+                      naturaleza siempre muestra su mejor perfil.
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+          <a
+            href="#"
+            class="inline-flex items-center text-white bg-lime-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:ring-primary-900"
+          >
+            Hacer el recorrido
+            <svg
+              class="ml-2 -mr-1 w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path
+                fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path></svg
+            >
+          </a>
+        </div>
+        <img
+          class="w-full rounded-lg hidden md:block"
+          src="/apoyanos/recorrido.png"
+          alt="dashboard image"
+        />
+      </div>
+    </section>
+    <!-- Sección Conectando con la madre tierra -->
+    <section class="bg-white">
+      <div
+        class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+      >
+        <img
+          class="w-full rounded-lg"
+          src="https://www.ecoticias.com/wp-content/uploads/2022/01/XOUM_os_tcm7-341311_noticia.jpg"
+          alt="dashboard image"
+        />
+
+        <div class="mt-4 md:mt-0">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
+            Conectando con la madre tierra
+          </h2>
+          <section class="bg-white">
+            <div
+              class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6"
+            >
+              <figure class="max-w-screen-md mx-auto">
+                <svg
+                  class="h-12 mx-auto mb-3 text-gray-400"
+                  viewBox="0 0 24 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                    fill="currentColor"></path>
+                </svg>
+                <blockquote>
+                  <p class="text-2xl font-medium text-gray-900">
+                    Mira profundamente en la naturaleza y entonces comprenderas
+                    todo mejor. <br />
+                    Albert Einstein.
+                  </p>
+                </blockquote>
+                <figcaption
+                  class="flex items-center justify-center mt-6 space-x-3"
+                >
+                  <div class="flex items-center divide-x-2 divide-gray-500">
+                    <div class="pr-3 font-medium text-gray-900">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-camera"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"
+                        ></path>
+                        <path
+                          d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="pl-3 text-sm font-light text-gray-500">
+                      Desde la foto de un celular hasta la camara más costosa la
+                      naturaleza siempre muestra su mejor perfil.
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <!-- Modal toggle -->
+          <button
+            data-modal-target="defaultModal"
+            data-modal-toggle="defaultModal"
+            class="inline-flex items-center text-white bg-lime-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:ring-primary-900"
+            type="button"
+          >
+            Vincúlate como voluntario
+            <svg
+              class="ml-2 -mr-1 w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path
+                fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path></svg
+            >
+          </button>
+
+          <!-- Main modal -->
+          <div
+            id="defaultModal"
+            tabindex="-1"
+            aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full"
+          >
+            <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+              <!-- Modal content -->
+              <div
+                class="relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5"
+              >
+                <!-- Modal header -->
+                <div
+                  class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600"
+                >
+                  <h3
+                    class="text-lg font-semibold text-gray-900 dark:text-white"
+                  >
+                    Formulario de voluntario
+                  </h3>
+                  <button
+                    type="button"
+                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    data-modal-toggle="defaultModal"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      ><path
+                        fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path></svg
+                    >
+                    <span class="sr-only">Close modal</span>
+                  </button>
+                </div>
+                <!-- Modal body -->
+                <form action="#">
+                  <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                    <div>
+                      <label
+                        for="name"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        >Nombre*</label
+                      >
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        placeholder="Esmeralda Becerra"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="brand"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        >Correo*</label
+                      >
+                      <input
+                        type="text"
+                        name="brand"
+                        id="brand"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        placeholder="esmeralda@correo.com.co"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="price"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        >Fecha inicio del voluntariado</label
+                      >
+                      <input
+                        type="date"
+                        name="price"
+                        id="price"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="price"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        >Fecha fin del voluntariado</label
+                      >
+                      <input
+                        type="date"
+                        name="price"
+                        id="price"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                      />
+                    </div>
+                    <div class="sm:col-span-2">
+                      <label
+                        for="description"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        >¿Tienes algún comentario adicional?</label
+                      >
+                      <textarea
+                        id="description"
+                        rows="5"
+                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        placeholder="Es un gusto unirme a su equipo de voluntarios"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="flex items-center space-x-4">
+                    <button
+                      type="submit"
+                      class="flex aligne-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 border border-lime-500"
+                    >
+                      reservar mi voluntariado
+                      <img class="w-10 ml-2" src="/payu.png" alt="" />
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Seccion nunca dejamos de aprender -->
+    <section class="bg-white">
+      <div
+        class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+      >
+        <div class="mt-4 md:mt-0">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
+            Nunca dejamos de aprender
+          </h2>
+          <img
+            class="w-full rounded-lg md:hidden"
+            src="/apoyanos/recorrido.png"
+            alt="dashboard image"
+          />
+          <section class="bg-white">
+            <div
+              class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6"
+            >
+              <figure class="max-w-screen-md mx-auto">
+                <svg
+                  class="h-12 mx-auto mb-3 text-gray-400"
+                  viewBox="0 0 24 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                    fill="currentColor"></path>
+                </svg>
+                <blockquote>
+                  <p class="text-2xl font-medium text-gray-900">
+                    La gente olvidará lo que dijiste, la gente olvidará lo que
+                    hiciste, pero la gente nunca olvidará lo que les hiciste
+                    sentir.
+                    <br /> Maya Angelou.
+                  </p>
+                </blockquote>
+                <figcaption
+                  class="flex items-center justify-center mt-6 space-x-3"
+                >
+                  <div class="flex items-center divide-x-2 divide-gray-500">
+                    <div class="pr-3 font-medium text-gray-900">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-camera"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"
+                        ></path>
+                        <path
+                          d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="pl-3 text-sm font-light text-gray-500">
+                      Desde la foto de un celular hasta la camara más costosa la
+                      naturaleza siempre muestra su mejor perfil.
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+          <a
+            href="#"
+            class="inline-flex items-center text-white bg-lime-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:ring-primary-900"
+          >
+            Hacer el recorrido
+            <svg
+              class="ml-2 -mr-1 w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path
+                fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path></svg
+            >
+          </a>
+        </div>
+        <img
+          class="w-full rounded-lg hidden md:block"
+          src="/apoyanos/recorrido.png"
+          alt="dashboard image"
+        />
+      </div>
+    </section>
   </div>
 </Layout>
