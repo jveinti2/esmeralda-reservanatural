@@ -2,7 +2,6 @@
 import Layout from "../layouts/Layout.astro";
 import Title11 from "../components/Title11.astro";
 import Carusel from "../components/Carusel.astro";
-
 ---
 
 <Layout title="La Esmeralda Reserva Natural | Servicios">
@@ -31,15 +30,15 @@ import Carusel from "../components/Carusel.astro";
       <div
         class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
       >
-      <Carusel
-      img1="https://img.freepik.com/foto-gratis/hermoso-arreglo-papel-tapiz-flores_23-2149057015.jpg?w=2000"
-      img2="https://img.freepik.com/foto-gratis/hermoso-arreglo-papel-tapiz-flores_23-2149057015.jpg?w=2000"
-      img3="https://img.freepik.com/foto-gratis/hermoso-arreglo-papel-tapiz-flores_23-2149057015.jpg?w=2000"
-      img4="https://img.freepik.com/foto-gratis/hermoso-arreglo-papel-tapiz-flores_23-2149057015.jpg?w=2000"
-      img5="https://img.freepik.com/foto-gratis/hermoso-arreglo-papel-tapiz-flores_23-2149057015.jpg?w=2000"
-      img6="https://img.freepik.com/foto-gratis/hermoso-arreglo-papel-tapiz-flores_23-2149057015.jpg?w=2000"
-      
-      />
+        <Carusel
+          client:load
+          img1="/servicios/exp_1.jpg"
+          img2="/servicios/exp_2.jpg"
+          img3="/servicios/exp_3.jpg"
+          img4="/servicios/exp_4.jpg"
+          img5="/servicios/exp_5.jpg"
+          img6="/servicios/exp_6.jpg"
+        />
 
         <div class="mt-4 md:mt-0">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
@@ -244,7 +243,7 @@ import Carusel from "../components/Carusel.astro";
         </div>
       </div>
     </section>
-    <!-- Seccion experiencias ansestrales -->
+    <!-- Seccion rutinas ansestrales -->
     <section class="bg-white">
       <div
         class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
@@ -253,11 +252,7 @@ import Carusel from "../components/Carusel.astro";
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
             Rutinas ancestrales
           </h2>
-          <img
-            class="w-full rounded-lg md:hidden"
-            src="/apoyanos/recorrido.png"
-            alt="dashboard image"
-          />
+
           <section class="bg-white">
             <div
               class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6"
@@ -325,10 +320,14 @@ import Carusel from "../components/Carusel.astro";
             >
           </a>
         </div>
-        <img
-          class="w-full rounded-lg hidden md:block"
-          src="/apoyanos/recorrido.png"
-          alt="dashboard image"
+        <Carusel
+          client:load
+          img1="/servicios/rut_1.jpg"
+          img2="/servicios/rut_2.jpg"
+          img3="/servicios/rut_3.jpg"
+          img4=""
+          img5=""
+          img6=""
         />
       </div>
     </section>
@@ -337,10 +336,14 @@ import Carusel from "../components/Carusel.astro";
       <div
         class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
       >
-        <img
-          class="w-full rounded-lg"
-          src="https://www.ecoticias.com/wp-content/uploads/2022/01/XOUM_os_tcm7-341311_noticia.jpg"
-          alt="dashboard image"
+        <Carusel
+          client:load
+          img1="/servicios/rut_1.jpg"
+          img2="/servicios/rut_2.jpg"
+          img3="/servicios/rut_3.jpg"
+          img4=""
+          img5=""
+          img6=""
         />
 
         <div class="mt-4 md:mt-0">
@@ -364,9 +367,8 @@ import Carusel from "../components/Carusel.astro";
                 </svg>
                 <blockquote>
                   <p class="text-2xl font-medium text-gray-900">
-                    Mira profundamente en la naturaleza y entonces comprenderas
-                    todo mejor. <br />
-                    Albert Einstein.
+                    El lente de tu corazón es más potente que el lente de tu
+                    cámara, déjate sorprender.
                   </p>
                 </blockquote>
                 <figcaption
@@ -556,11 +558,7 @@ import Carusel from "../components/Carusel.astro";
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
             Nunca dejamos de aprender
           </h2>
-          <img
-            class="w-full rounded-lg md:hidden"
-            src="/apoyanos/recorrido.png"
-            alt="dashboard image"
-          />
+
           <section class="bg-white">
             <div
               class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6"
@@ -577,11 +575,8 @@ import Carusel from "../components/Carusel.astro";
                     fill="currentColor"></path>
                 </svg>
                 <blockquote>
-                  <p class="text-2xl font-medium text-gray-900">
-                    La gente olvidará lo que dijiste, la gente olvidará lo que
-                    hiciste, pero la gente nunca olvidará lo que les hiciste
-                    sentir.
-                    <br /> Maya Angelou.
+                  <p class="text-2xl font-medium text-gray-900">                    
+                    Mira profundamente en la naturaleza y entonces comprenderás todo mejor <br /> Albert Einstein.
                   </p>
                 </blockquote>
                 <figcaption
@@ -631,10 +626,14 @@ import Carusel from "../components/Carusel.astro";
             >
           </a>
         </div>
-        <img
-          class="w-full rounded-lg hidden md:block"
-          src="/apoyanos/recorrido.png"
-          alt="dashboard image"
+        <Carusel
+          client:load
+          img1="/servicios/ap_1.jpg"
+          img2="/servicios/ap_2.jpg"
+          img3="/servicios/ap_3.jpg"
+          img4="/servicios/ap_4.jpg"
+          img5="/servicios/ap_5.jpg"
+          img6="/servicios/ap_6.jpg"
         />
       </div>
     </section>
