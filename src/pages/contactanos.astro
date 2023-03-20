@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Title11 from "../components/Title11.astro";
 import BtnWapp from "../components/BtnWapp.astro";
+import ContactForm from "../components/ContactForm.astro";
 ---
 
 <Layout title="La Esmeralda Reserva Natural | Contactanos">
@@ -13,19 +14,22 @@ import BtnWapp from "../components/BtnWapp.astro";
     </div>
   </div>
   <div class="px-4 container m-auto">
-    <div class="text-center">
-      <p class="mt-3 mb-4 font-bold text-gray-500">
-        Si quieres comunicación directa, contactános por medio de WhatsApp
-      </p>
-      <BtnWapp cta="¡Haz click aquí y hablemos!" />
-    </div>
-    <div class="text-center">
-      <p class="mt-3 mb-4 font-bold text-gray-500">
-        ó puedes llenar el siguiente formulario y nosotros nos pondremos en
-        contacto contigo.
-      </p>
-      <iframe class="container m-auto" src="https://forms.gle/w62pZB6XnNhYe3KLA" height="870" >Cargando…</iframe>
-     
+    <div class="md:grid md:grid-cols-2">
+      <div>
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md text-center">
+          <h2
+            class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900"
+          >
+            Escribenos por whatsapp
+          </h2>
+          <BtnWapp
+            cta="¡Hola, quisiera comunicarme con ustedes!"
+          />
+        </div>
+      </div>
+      <div>
+        <ContactForm />
+      </div>
     </div>
   </div>
 </Layout>

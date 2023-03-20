@@ -12,10 +12,10 @@ import Carusel from "../components/Carusel.astro";
       <Title11 text1="Un día" text2="En la reserva" />
     </div>
   </div>
-  <div class="container m-auto space-y-10 mb-10 pt-20">
+  <div class="container m-auto space-y-10 mb-10 pt-5 md:pt-16">
     <div class="container m-auto text-center">
       <p
-        class="mb-8 text-lg font-normal text-gray-900 lg:text-xl sm:px-16 xl:px-48"
+        class="mb-8 px-6 text-lg font-normal text-gray-900 lg:text-xl sm:px-16 xl:px-48"
       >
         “Hoy puede ser un gran día, plantéatelo así. Aprovecharlo o que pase de
         largo depende, en parte, de ti. Dale el día libre a la experiencia, para
@@ -41,7 +41,7 @@ import Carusel from "../components/Carusel.astro";
         />
 
         <div class="mt-4 md:mt-0">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
+          <h2 class="text-center mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
             Inmersión en nuestro ecosistema
           </h2>
           <section class="bg-white">
@@ -95,148 +95,149 @@ import Carusel from "../components/Carusel.astro";
               </figure>
             </div>
           </section>
-
-          <!-- Modal toggle -->
-          <button
-            data-modal-target="defaultModal"
-            data-modal-toggle="defaultModal"
-            class="inline-flex items-center text-white bg-lime-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:ring-primary-900"
-            type="button"
-          >
-            Vincúlate como voluntario
-            <svg
-              class="ml-2 -mr-1 w-5 h-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"></path></svg
+          <div class="text-center">
+            <!-- Modal toggle -->
+            <button
+              data-modal-target="defaultModal"
+              data-modal-toggle="defaultModal"
+              class="inline-flex items-center text-white bg-lime-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:ring-primary-900"
+              type="button"
             >
-          </button>
-
-          <!-- Main modal -->
-          <div
-            id="defaultModal"
-            tabindex="-1"
-            aria-hidden="true"
-            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full"
-          >
-            <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
-              <!-- Modal content -->
-              <div
-                class="relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5"
+              Vincúlate como voluntario
+              <svg
+                class="ml-2 -mr-1 w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path></svg
               >
-                <!-- Modal header -->
+            </button>
+
+            <!-- Main modal -->
+            <div
+              id="defaultModal"
+              tabindex="-1"
+              aria-hidden="true"
+              class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full"
+            >
+              <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+                <!-- Modal content -->
                 <div
-                  class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600"
+                  class="relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5"
                 >
-                  <h3
-                    class="text-lg font-semibold text-gray-900 dark:text-white"
+                  <!-- Modal header -->
+                  <div
+                    class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600"
                   >
-                    Formulario de voluntario
-                  </h3>
-                  <button
-                    type="button"
-                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                    data-modal-toggle="defaultModal"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                      ><path
-                        fill-rule="evenodd"
-                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path></svg
+                    <h3
+                      class="text-lg font-semibold text-gray-900 dark:text-white"
                     >
-                    <span class="sr-only">Close modal</span>
-                  </button>
-                </div>
-                <!-- Modal body -->
-                <form action="#">
-                  <div class="grid gap-4 mb-4 sm:grid-cols-2">
-                    <div>
-                      <label
-                        for="name"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                        >Nombre*</label
-                      >
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                        placeholder="Esmeralda Becerra"
-                      />
-                    </div>
-                    <div>
-                      <label
-                        for="brand"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                        >Correo*</label
-                      >
-                      <input
-                        type="text"
-                        name="brand"
-                        id="brand"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                        placeholder="esmeralda@correo.com.co"
-                      />
-                    </div>
-                    <div>
-                      <label
-                        for="price"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                        >Fecha inicio del voluntariado</label
-                      >
-                      <input
-                        type="date"
-                        name="price"
-                        id="price"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                      />
-                    </div>
-                    <div>
-                      <label
-                        for="price"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                        >Fecha fin del voluntariado</label
-                      >
-                      <input
-                        type="date"
-                        name="price"
-                        id="price"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                      />
-                    </div>
-                    <div class="sm:col-span-2">
-                      <label
-                        for="description"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                        >¿Tienes algún comentario adicional?</label
-                      >
-                      <textarea
-                        id="description"
-                        rows="5"
-                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                        placeholder="Es un gusto unirme a su equipo de voluntarios"
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div class="flex items-center space-x-4">
+                      Formulario de voluntario
+                    </h3>
                     <button
-                      type="submit"
-                      class="flex aligne-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 border border-lime-500"
+                      type="button"
+                      class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                      data-modal-toggle="defaultModal"
                     >
-                      reservar mi voluntariado
-                      <img class="w-10 ml-2" src="/payu.png" alt="" />
+                      <svg
+                        aria-hidden="true"
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        ><path
+                          fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"></path></svg
+                      >
+                      <span class="sr-only">Close modal</span>
                     </button>
                   </div>
-                </form>
+                  <!-- Modal body -->
+                  <form action="#">
+                    <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                      <div>
+                        <label
+                          for="name"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >Nombre*</label
+                        >
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                          placeholder="Esmeralda Becerra"
+                        />
+                      </div>
+                      <div>
+                        <label
+                          for="brand"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >Correo*</label
+                        >
+                        <input
+                          type="text"
+                          name="brand"
+                          id="brand"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                          placeholder="esmeralda@correo.com.co"
+                        />
+                      </div>
+                      <div>
+                        <label
+                          for="price"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >Fecha inicio del voluntariado</label
+                        >
+                        <input
+                          type="date"
+                          name="price"
+                          id="price"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        />
+                      </div>
+                      <div>
+                        <label
+                          for="price"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >Fecha fin del voluntariado</label
+                        >
+                        <input
+                          type="date"
+                          name="price"
+                          id="price"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        />
+                      </div>
+                      <div class="sm:col-span-2">
+                        <label
+                          for="description"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >¿Tienes algún comentario adicional?</label
+                        >
+                        <textarea
+                          id="description"
+                          rows="5"
+                          class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                          placeholder="Es un gusto unirme a su equipo de voluntarios"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                      <button
+                        type="submit"
+                        class="flex aligne-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 border border-lime-500"
+                      >
+                        reservar mi voluntariado
+                        <img class="w-10 ml-2" src="/payu.png" alt="" />
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -248,11 +249,23 @@ import Carusel from "../components/Carusel.astro";
       <div
         class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
       >
+        <div class="md:hidden">
+          <Carusel
+            client:load
+            img1="/servicios/rut_1.jpg"
+            img2="/servicios/rut_2.jpg"
+            img3="/servicios/rut_3.jpg"
+            img4="/servicios/rut_4.jpg"
+            img5="/servicios/rut_5.jpg"
+            img6="/servicios/rut_6.jpg"
+          />
+        </div>
         <div class="mt-4 md:mt-0">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
-            Saberes ancestrales // Yoga
+          <h2
+            class="text-center mb-4 text-4xl tracking-tight font-extrabold text-gray-900"
+          >
+            Saberes ancestrales
           </h2>
-
           <section class="bg-white">
             <div
               class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6"
@@ -303,32 +316,36 @@ import Carusel from "../components/Carusel.astro";
               </figure>
             </div>
           </section>
-          <a
-            href="#"
-            class="inline-flex items-center text-white bg-lime-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:ring-primary-900"
-          >
-            Hacer el recorrido
-            <svg
-              class="ml-2 -mr-1 w-5 h-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"></path></svg
+          <div class="text-center">
+            <a
+              href="#"
+              class="inline-flex items-center text-white bg-lime-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:ring-primary-900"
             >
-          </a>
+              Hacer el recorrido
+              <svg
+                class="ml-2 -mr-1 w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path></svg
+              >
+            </a>
+          </div>
         </div>
-        <Carusel
-          client:load
-          img1="/servicios/rut_1.jpg"
-          img2="/servicios/rut_2.jpg"
-          img3="/servicios/rut_3.jpg"
-          img4=""
-          img5=""
-          img6=""
-        />
+        <div class="hidden md:block">
+          <Carusel
+            client:load
+            img1="/servicios/rut_1.jpg"
+            img2="/servicios/rut_2.jpg"
+            img3="/servicios/rut_3.jpg"
+            img4="/servicios/rut_4.jpg"
+            img5="/servicios/rut_5.jpg"
+            img6="/servicios/rut_6.jpg"
+          />
+        </div>
       </div>
     </section>
     <!-- Sección Conectando con la madre tierra -->
@@ -338,12 +355,12 @@ import Carusel from "../components/Carusel.astro";
       >
         <Carusel
           client:load
-          img1="/servicios/rut_1.jpg"
-          img2="/servicios/rut_2.jpg"
-          img3="/servicios/rut_3.jpg"
-          img4=""
-          img5=""
-          img6=""
+          img1="/servicios/an_1.jpg"
+          img2="/servicios/an_2.jpg"
+          img3="/servicios/an_3.jpg"
+          img4="/servicios/an_4.jpg"
+          img5="/servicios/an_5.jpg"
+          img6="/servicios/an_6.jpg"
         />
 
         <div class="mt-4 md:mt-0">
@@ -401,148 +418,148 @@ import Carusel from "../components/Carusel.astro";
               </figure>
             </div>
           </section>
-
-          <!-- Modal toggle -->
-          <button
-            data-modal-target="defaultModal"
-            data-modal-toggle="defaultModal"
-            class="inline-flex items-center text-white bg-lime-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:ring-primary-900"
-            type="button"
-          >
-            Vincúlate como voluntario
-            <svg
-              class="ml-2 -mr-1 w-5 h-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"></path></svg
+          <div class="text-center">
+            <!-- Modal toggle -->
+            <button
+              data-modal-target="defaultModal"
+              data-modal-toggle="defaultModal"
+              class="inline-flex items-center text-white bg-lime-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:ring-primary-900"
+              type="button"
             >
-          </button>
-
-          <!-- Main modal -->
-          <div
-            id="defaultModal"
-            tabindex="-1"
-            aria-hidden="true"
-            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full"
-          >
-            <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
-              <!-- Modal content -->
-              <div
-                class="relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5"
+              Vincúlate como voluntario
+              <svg
+                class="ml-2 -mr-1 w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path></svg
               >
-                <!-- Modal header -->
+            </button>
+            <!-- Main modal -->
+            <div
+              id="defaultModal"
+              tabindex="-1"
+              aria-hidden="true"
+              class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full"
+            >
+              <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+                <!-- Modal content -->
                 <div
-                  class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600"
+                  class="relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5"
                 >
-                  <h3
-                    class="text-lg font-semibold text-gray-900 dark:text-white"
+                  <!-- Modal header -->
+                  <div
+                    class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600"
                   >
-                    Formulario de voluntario
-                  </h3>
-                  <button
-                    type="button"
-                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                    data-modal-toggle="defaultModal"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                      ><path
-                        fill-rule="evenodd"
-                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path></svg
+                    <h3
+                      class="text-lg font-semibold text-gray-900 dark:text-white"
                     >
-                    <span class="sr-only">Close modal</span>
-                  </button>
-                </div>
-                <!-- Modal body -->
-                <form action="#">
-                  <div class="grid gap-4 mb-4 sm:grid-cols-2">
-                    <div>
-                      <label
-                        for="name"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                        >Nombre*</label
-                      >
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                        placeholder="Esmeralda Becerra"
-                      />
-                    </div>
-                    <div>
-                      <label
-                        for="brand"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                        >Correo*</label
-                      >
-                      <input
-                        type="text"
-                        name="brand"
-                        id="brand"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                        placeholder="esmeralda@correo.com.co"
-                      />
-                    </div>
-                    <div>
-                      <label
-                        for="price"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                        >Fecha inicio del voluntariado</label
-                      >
-                      <input
-                        type="date"
-                        name="price"
-                        id="price"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                      />
-                    </div>
-                    <div>
-                      <label
-                        for="price"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                        >Fecha fin del voluntariado</label
-                      >
-                      <input
-                        type="date"
-                        name="price"
-                        id="price"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                      />
-                    </div>
-                    <div class="sm:col-span-2">
-                      <label
-                        for="description"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                        >¿Tienes algún comentario adicional?</label
-                      >
-                      <textarea
-                        id="description"
-                        rows="5"
-                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                        placeholder="Es un gusto unirme a su equipo de voluntarios"
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div class="flex items-center space-x-4">
+                      Formulario de voluntario
+                    </h3>
                     <button
-                      type="submit"
-                      class="flex aligne-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 border border-lime-500"
+                      type="button"
+                      class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                      data-modal-toggle="defaultModal"
                     >
-                      reservar mi voluntariado
-                      <img class="w-10 ml-2" src="/payu.png" alt="" />
+                      <svg
+                        aria-hidden="true"
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        ><path
+                          fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"></path></svg
+                      >
+                      <span class="sr-only">Close modal</span>
                     </button>
                   </div>
-                </form>
+                  <!-- Modal body -->
+                  <form action="#">
+                    <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                      <div>
+                        <label
+                          for="name"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >Nombre*</label
+                        >
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                          placeholder="Esmeralda Becerra"
+                        />
+                      </div>
+                      <div>
+                        <label
+                          for="brand"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >Correo*</label
+                        >
+                        <input
+                          type="text"
+                          name="brand"
+                          id="brand"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                          placeholder="esmeralda@correo.com.co"
+                        />
+                      </div>
+                      <div>
+                        <label
+                          for="price"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >Fecha inicio del voluntariado</label
+                        >
+                        <input
+                          type="date"
+                          name="price"
+                          id="price"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        />
+                      </div>
+                      <div>
+                        <label
+                          for="price"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >Fecha fin del voluntariado</label
+                        >
+                        <input
+                          type="date"
+                          name="price"
+                          id="price"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        />
+                      </div>
+                      <div class="sm:col-span-2">
+                        <label
+                          for="description"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >¿Tienes algún comentario adicional?</label
+                        >
+                        <textarea
+                          id="description"
+                          rows="5"
+                          class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                          placeholder="Es un gusto unirme a su equipo de voluntarios"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                      <button
+                        type="submit"
+                        class="flex aligne-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 border border-lime-500"
+                      >
+                        reservar mi voluntariado
+                        <img class="w-10 ml-2" src="/payu.png" alt="" />
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -554,6 +571,17 @@ import Carusel from "../components/Carusel.astro";
       <div
         class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
       >
+        <div class="md:hidden">
+          <Carusel
+            client:load
+            img1="/servicios/ap_1.jpg"
+            img2="/servicios/ap_2.jpg"
+            img3="/servicios/ap_3.jpg"
+            img4="/servicios/ap_4.jpg"
+            img5="/servicios/ap_5.jpg"
+            img6="/servicios/ap_6.jpg"
+          />
+        </div>
         <div class="mt-4 md:mt-0">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
             Nunca dejamos de aprender
@@ -575,8 +603,9 @@ import Carusel from "../components/Carusel.astro";
                     fill="currentColor"></path>
                 </svg>
                 <blockquote>
-                  <p class="text-2xl font-medium text-gray-900">                    
-                    Mira profundamente en la naturaleza y entonces comprenderás todo mejor <br /> Albert Einstein.
+                  <p class="text-2xl font-medium text-gray-900">
+                    Mira profundamente en la naturaleza y entonces comprenderás
+                    todo mejor <br /> Albert Einstein.
                   </p>
                 </blockquote>
                 <figcaption
@@ -609,32 +638,36 @@ import Carusel from "../components/Carusel.astro";
               </figure>
             </div>
           </section>
-          <a
-            href="#"
-            class="inline-flex items-center text-white bg-lime-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:ring-primary-900"
-          >
-            Hacer el recorrido
-            <svg
-              class="ml-2 -mr-1 w-5 h-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"></path></svg
+          <div class="text-center">
+            <a
+              href="#"
+              class="inline-flex items-center text-white bg-lime-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:ring-primary-900"
             >
-          </a>
+              Hacer el recorrido
+              <svg
+                class="ml-2 -mr-1 w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path></svg
+              >
+            </a>
+          </div>
         </div>
-        <Carusel
-          client:load
-          img1="/servicios/ap_1.jpg"
-          img2="/servicios/ap_2.jpg"
-          img3="/servicios/ap_3.jpg"
-          img4="/servicios/ap_4.jpg"
-          img5="/servicios/ap_5.jpg"
-          img6="/servicios/ap_6.jpg"
-        />
+        <div class="hidden md:block">
+          <Carusel
+            client:load
+            img1="/servicios/ap_1.jpg"
+            img2="/servicios/ap_2.jpg"
+            img3="/servicios/ap_3.jpg"
+            img4="/servicios/ap_4.jpg"
+            img5="/servicios/ap_5.jpg"
+            img6="/servicios/ap_6.jpg"
+          />
+        </div>
       </div>
     </section>
   </div>
