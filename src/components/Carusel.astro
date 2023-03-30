@@ -1,5 +1,5 @@
 ---
-const { img1, img2, img3, img4, img5, img6 } = Astro.props;
+const { img1, img2, img3, img4, img5, img6, img7, img8, img9 } = Astro.props;
 ---
 
 <div id="default-carousel" class="relative" data-carousel="slide">
@@ -59,6 +59,33 @@ const { img1, img2, img3, img4, img5, img6 } = Astro.props;
         alt="{img6}"
       />
     </div>
+    <!-- Item 7 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img
+        loading="lazy"
+        src={img7}
+        class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+        alt="{img7}"
+      />
+    </div>
+    <!-- Item 8 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img
+        loading="lazy"
+        src={img8}
+        class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+        alt="{img8}"
+      />
+    </div>
+    <!-- Item 9 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img
+        loading="lazy"
+        src={img9}
+        class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+        alt="{img9}"
+      />
+    </div>
   </div>
   <!-- Slider indicators -->
   <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
@@ -98,6 +125,25 @@ const { img1, img2, img3, img4, img5, img6 } = Astro.props;
       aria-current="false"
       aria-label="Slide 6"
       data-carousel-slide-to="5"></button>
+    <button
+      type="button"
+      class="w-3 h-3 rounded-full"
+      aria-current="false"
+      aria-label="Slide 7"
+      data-carousel-slide-to="6"></button>
+    <button
+      type="button"
+      class="w-3 h-3 rounded-full"
+      aria-current="false"
+      aria-label="Slide 8"
+      data-carousel-slide-to="7"></button>
+    <button
+      type="button"
+      class="w-3 h-3 rounded-full"
+      aria-current="false"
+      aria-label="Slide 9"
+      data-carousel-slide-to="8"></button>
+      
   </div>
   <!-- Slider controls -->
   <button
